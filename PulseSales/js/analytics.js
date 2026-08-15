@@ -35,6 +35,12 @@ function getFilteredOrders() {
                 if (orderTime < startOfThisMonth) return false;
             } else if (filterDate === 'Q1' || filterDate === 'YEAR') {
                 if (orderTime < startOfThisYear) return false;
+            } else if (filterDate !== 'CUSTOM') {
+                // Specific date filter (YYYY-MM-DD)
+                const filterDateObj = new Date(filterDate);
+                const filterDateStart = new Date(filterDateObj.getFullYear(), filterDateObj.getMonth(), filterDateObj.getDate()).getTime();
+                const filterDateEnd = filterDateStart + 24 * 60 * 60 * 1000;
+                if (orderTime < filterDateStart || orderTime >= filterDateEnd) return false;
             }
         }
 

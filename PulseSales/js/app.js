@@ -82,10 +82,23 @@ function setupEventListeners() {
     }
 
     const dateFilter = document.getElementById('filter-date');
+    const customDatePicker = document.getElementById('custom-date-picker');
     if (dateFilter) {
         dateFilter.addEventListener('change', (e) => {
-            filterDate = e.target.value;
-            showToast(`Timeframe updated`, 'info');
+            if (e.target.value === 'CUSTOM') {
+                if (customDatePicker) customDatePicker.style.display = 'inline-block';
+            } else {
+                if (customDatePicker) customDatePicker.style.display = 'none';
+                filterDate = e.target.value;
+                showToast(`Timeframe updated`, 'info');
+                if (typeof renderDashboard === 'function') renderDashboard();
+            }
+        });
+    }
+    if (customDatePicker) {
+        customDatePicker.addEventListener('change', (e) => {
+            filterDate = e.target.value; // 'YYYY-MM-DD'
+            showToast(`Timeframe updated to ${e.target.value}`, 'info');
             if (typeof renderDashboard === 'function') renderDashboard();
         });
     }
@@ -144,7 +157,7 @@ function renderOrdersTable() {
     const paginated = filtered.slice((ordersPage - 1) * pageSize, ordersPage * pageSize);
 
     if (paginated.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;">No data</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center;">No data</td></tr>`;
         return;
     }
 
@@ -152,9 +165,11 @@ function renderOrdersTable() {
         const gross = Number(o.amount) || 0;
         const discount = Number(o.discount_amount) || 0;
         const net = gross - discount;
+        const dateStr = o.order_date_time ? new Date(o.order_date_time).toLocaleDateString() : 'N/A';
         return `
             <tr>
                 <td>#${o.order_no}</td>
+                <td>${escapeHtml(dateStr)}</td>
                 <td class="text-cyan">USR-${o.user_id}</td>
                 <td>PRD-${o.product_id}</td>
                 <td>$${gross.toFixed(2)}</td>

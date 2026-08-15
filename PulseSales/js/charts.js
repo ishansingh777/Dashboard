@@ -134,10 +134,7 @@ function renderDoughnutChart(labels, data) {
 // Extra Charts for Analytics Dashboard Tab
 function updateCharts(filteredOrders) {
     // Shared processing
-    const fullMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const monthMap = {};
-    fullMonths.forEach(m => monthMap[m] = 0);
-
+    const dateMap = {};
     const destNames = ['Tokyo', 'Paris', 'New York', 'Swiss Alps', 'Dubai', 'Sydney'];
     const destMap = {};
     destNames.forEach(d => destMap[d] = 0);
@@ -149,12 +146,13 @@ function updateCharts(filteredOrders) {
     // Process data
     if (filteredOrders && filteredOrders.length > 0) {
         filteredOrders.forEach((o, i) => {
-            // Line chart
+            // Line chart (Date wise)
             if (o.order_date_time) {
                 const d = new Date(o.order_date_time);
                 if (!isNaN(d.getTime())) {
-                    const m = d.toLocaleDateString([], { month: 'short' });
-                    if (monthMap.hasOwnProperty(m)) monthMap[m] += ((Number(o.amount) || 0) - (Number(o.discount_amount) || 0));
+                    const dateStr = d.toLocaleDateString();
+                    if (!dateMap[dateStr]) dateMap[dateStr] = 0;
+                    dateMap[dateStr] += ((Number(o.amount) || 0) - (Number(o.discount_amount) || 0));
                 }
             }
             
@@ -168,7 +166,11 @@ function updateCharts(filteredOrders) {
         });
     }
 
-    renderLineChart(Object.keys(monthMap), Object.values(monthMap));
+    // Sort dates for line chart
+    const sortedDates = Object.keys(dateMap).sort((a, b) => new Date(a) - new Date(b));
+    const sortedData = sortedDates.map(d => dateMap[d]);
+
+    renderLineChart(sortedDates, sortedData);
     renderBarChart(Object.keys(destMap), Object.values(destMap));
     renderDoughnutChart(Object.keys(regionMap), Object.values(regionMap));
     

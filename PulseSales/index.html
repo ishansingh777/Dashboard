@@ -86,7 +86,9 @@
                         <option value="MONTHLY">Current Cycle (Month)</option>
                         <option value="30DAYS">30-Day Window</option>
                         <option value="Q1">Q1 Sector</option>
+                        <option value="CUSTOM">Custom Date</option>
                     </select>
+                    <input type="date" id="custom-date-picker" class="glass-select" style="display: none;" title="Select specific date">
 
                     <select id="filter-destination" class="glass-select">
                         <option value="ALL">All Nodes</option>
@@ -273,6 +275,7 @@
                                 <thead>
                                     <tr>
                                         <th>Order ID</th>
+                                        <th>Date</th>
                                         <th>User Ref</th>
                                         <th>Product Node</th>
                                         <th>Gross Value</th>
