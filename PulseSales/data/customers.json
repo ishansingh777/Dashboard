@@ -1,0 +1,7 @@
+[
+    { "id": "CUS-1029", "name": "TechFlow Inc.", "tier": "Enterprise", "ltv": 14500, "status": "Active" },
+    { "id": "CUS-1028", "name": "Global Data Solutions", "tier": "Pro", "ltv": 3200, "status": "Active" },
+    { "id": "CUS-1027", "name": "Nova Systems", "tier": "Standard", "ltv": 850, "status": "Churn Risk" },
+    { "id": "CUS-1026", "name": "Alpha Corp", "tier": "Enterprise", "ltv": 21000, "status": "Active" },
+    { "id": "CUS-1025", "name": "Beta Startup", "tier": "Pro", "ltv": 1200, "status": "Active" }
+]

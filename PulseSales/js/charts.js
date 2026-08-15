@@ -1,119 +1,153 @@
 // js/charts.js
 
-// Global Chart Instances
-let revenueLineChart = null;
-let destinationBarChart = null;
-let regionDoughnutChart = null;
-let velocityAreaChart = null;
-let pendingChart = null;
+let mainRevenueChart = null;
+let salesBarChart = null;
+let regionDonutChart = null;
 
-// Premium Chart.js Defaults
-Chart.defaults.color = '#94a3b8';
-Chart.defaults.font.family = "'Space Grotesk', monospace";
+function getChartColors() {
+    const isDark = document.body.classList.contains('dark-mode');
+    return {
+        text: isDark ? '#94a3b8' : '#475569',
+        grid: isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)',
+        indigo: isDark ? '#6366f1' : '#4f46e5',
+        indigoLight: isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(79, 70, 229, 0.1)',
+        cyan: '#06b6d4',
+        amber: '#f59e0b',
+        green: '#10b981',
+        tooltipBg: isDark ? 'rgba(16, 21, 34, 0.95)' : 'rgba(255, 255, 255, 0.95)',
+        tooltipText: isDark ? '#f8fafc' : '#0f172a'
+    };
+}
 
-const premiumOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-        legend: { display: false },
-        tooltip: {
-            backgroundColor: 'rgba(15, 23, 42, 0.9)',
-            titleColor: '#818cf8',
-            bodyColor: '#fff',
-            borderColor: 'rgba(99, 102, 241, 0.3)',
-            borderWidth: 1,
-            padding: 12,
-            displayColors: true,
-            boxPadding: 6,
-            cornerRadius: 8
-        }
-    },
-    scales: {
-        x: { grid: { display: false, drawBorder: false }, ticks: { color: '#64748b' } },
-        y: { grid: { color: 'rgba(255, 255, 255, 0.03)', drawBorder: false }, ticks: { color: '#64748b' } }
-    },
-    interaction: {
-        mode: 'index',
-        intersect: false,
-    }
-};
+function initCharts(salesData) {
+    if (!salesData) return;
+    
+    Chart.defaults.font.family = "'Inter', sans-serif";
+    
+    renderMainRevenueChart(salesData.monthly_revenue);
+    renderSalesBarChart(salesData.weekly_revenue);
+    renderRegionDonutChart(salesData.regional);
+}
 
-function renderLineChart(labels, data) {
-    const ctx = document.getElementById('lineChart');
+function getCommonOptions() {
+    const colors = getChartColors();
+    return {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                backgroundColor: colors.tooltipBg,
+                titleColor: colors.tooltipText,
+                bodyColor: colors.tooltipText,
+                borderColor: colors.grid,
+                borderWidth: 1,
+                padding: 12,
+                boxPadding: 6,
+                cornerRadius: 8,
+                titleFont: { size: 13, family: "'Inter', sans-serif" },
+                bodyFont: { size: 12, family: "'Inter', sans-serif" }
+            }
+        },
+        interaction: { mode: 'index', intersect: false }
+    };
+}
+
+function renderMainRevenueChart(monthlyData) {
+    const ctx = document.getElementById('main-revenue-chart');
     if (!ctx) return;
+    if (mainRevenueChart) mainRevenueChart.destroy();
     
-    if (revenueLineChart) revenueLineChart.destroy();
-    
-    const gradient = ctx.getContext('2d').createLinearGradient(0, 0, 0, 400);
-    gradient.addColorStop(0, 'rgba(99, 102, 241, 0.5)');
-    gradient.addColorStop(1, 'rgba(99, 102, 241, 0.0)');
+    const colors = getChartColors();
+    const labels = monthlyData.map(d => d.month);
+    const data = monthlyData.map(d => d.revenue);
 
-    revenueLineChart = new Chart(ctx, {
+    const gradient = ctx.getContext('2d').createLinearGradient(0, 0, 0, 350);
+    gradient.addColorStop(0, colors.indigoLight);
+    gradient.addColorStop(1, 'rgba(0,0,0,0)');
+
+    const opts = getCommonOptions();
+    opts.scales = {
+        x: { grid: { display: false }, ticks: { color: colors.text } },
+        y: { grid: { color: colors.grid }, ticks: { color: colors.text, callback: val => '$' + val / 1000 + 'k' } }
+    };
+
+    mainRevenueChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: labels,
+            labels,
             datasets: [{
-                label: 'Net Revenue ($)',
-                data: data,
-                borderColor: '#818cf8',
+                label: 'Net Revenue',
+                data,
+                borderColor: colors.indigo,
                 backgroundColor: gradient,
-                borderWidth: 3,
+                borderWidth: 2,
                 fill: true,
                 tension: 0.4,
-                pointBackgroundColor: '#0f172a',
-                pointBorderColor: '#22d3ee',
-                pointBorderWidth: 2,
+                pointBackgroundColor: colors.indigo,
+                pointBorderColor: '#fff',
                 pointRadius: 4,
                 pointHoverRadius: 6
             }]
         },
-        options: premiumOptions
+        options: opts
     });
 }
 
-function renderBarChart(labels, data) {
-    const ctx = document.getElementById('barChart');
+function renderSalesBarChart(weeklyData) {
+    const ctx = document.getElementById('sales-bar-chart');
     if (!ctx) return;
-    
-    if (destinationBarChart) destinationBarChart.destroy();
-    
-    destinationBarChart = new Chart(ctx, {
+    if (salesBarChart) salesBarChart.destroy();
+
+    const colors = getChartColors();
+    const labels = weeklyData.map(d => d.day);
+    const data = weeklyData.map(d => d.value);
+
+    const opts = getCommonOptions();
+    opts.scales = {
+        x: { grid: { display: false }, ticks: { color: colors.text } },
+        y: { grid: { color: colors.grid }, ticks: { color: colors.text, callback: val => '$' + val / 1000 + 'k' } }
+    };
+
+    salesBarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: labels,
+            labels,
             datasets: [{
-                label: 'Gross Volume',
-                data: data,
-                backgroundColor: 'rgba(6, 182, 212, 0.8)',
-                hoverBackgroundColor: '#22d3ee',
-                borderRadius: 6,
+                label: 'Sales',
+                data,
+                backgroundColor: colors.cyan,
+                borderRadius: 4,
                 barPercentage: 0.6
             }]
         },
-        options: premiumOptions
+        options: opts
     });
 }
 
-function renderDoughnutChart(labels, data) {
-    const ctx = document.getElementById('doughnutChart');
+function renderRegionDonutChart(regionalData) {
+    const ctx = document.getElementById('region-donut-chart');
     if (!ctx) return;
-    
-    if (regionDoughnutChart) regionDoughnutChart.destroy();
-    
-    regionDoughnutChart = new Chart(ctx, {
+    if (regionDonutChart) regionDonutChart.destroy();
+
+    const colors = getChartColors();
+    const labels = ['North America', 'Europe', 'Asia-Pacific', 'Other'];
+    const data = [
+        regionalData.north_america,
+        regionalData.europe,
+        regionalData.asia_pacific,
+        regionalData.other
+    ];
+
+    regionDonutChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: labels,
+            labels,
             datasets: [{
-                data: data,
-                backgroundColor: [
-                    '#818cf8', // Indigo
-                    '#22d3ee', // Cyan
-                    '#f472b6', // Pink
-                    '#fbbf24'  // Amber
-                ],
+                data,
+                backgroundColor: [colors.indigo, colors.cyan, colors.amber, colors.green],
                 borderWidth: 0,
-                hoverOffset: 10
+                hoverOffset: 4
             }]
         },
         options: {
@@ -121,96 +155,16 @@ function renderDoughnutChart(labels, data) {
             maintainAspectRatio: false,
             cutout: '75%',
             plugins: {
-                legend: {
-                    position: 'right',
-                    labels: { color: '#cbd5e1', padding: 20, font: { family: "'Space Grotesk', monospace" } }
-                },
-                tooltip: premiumOptions.plugins.tooltip
+                legend: { position: 'right', labels: { color: colors.text, padding: 20, font: { family: "'Inter', sans-serif" } } },
+                tooltip: getCommonOptions().plugins.tooltip
             }
         }
     });
 }
 
-// Extra Charts for Analytics Dashboard Tab
-function updateCharts(filteredOrders) {
-    // Shared processing
-    const dateMap = {};
-    const destNames = ['Tokyo', 'Paris', 'New York', 'Swiss Alps', 'Dubai', 'Sydney'];
-    const destMap = {};
-    destNames.forEach(d => destMap[d] = 0);
-
-    const regions = ['Asia-Pacific', 'Europe', 'North America', 'Middle East'];
-    const regionMap = {};
-    regions.forEach(r => regionMap[r] = 0);
-
-    // Process data
-    if (filteredOrders && filteredOrders.length > 0) {
-        filteredOrders.forEach((o, i) => {
-            // Line chart (Date wise)
-            if (o.order_date_time) {
-                const d = new Date(o.order_date_time);
-                if (!isNaN(d.getTime())) {
-                    const dateStr = d.toLocaleDateString();
-                    if (!dateMap[dateStr]) dateMap[dateStr] = 0;
-                    dateMap[dateStr] += ((Number(o.amount) || 0) - (Number(o.discount_amount) || 0));
-                }
-            }
-            
-            // Bar chart
-            const dIdx = (o.product_id || 0) % destNames.length;
-            destMap[destNames[dIdx]] += (Number(o.amount) || 0);
-            
-            // Doughnut
-            const rIdx = i % regions.length;
-            regionMap[regions[rIdx]] += 1;
-        });
+// Redraw on theme change
+window.addEventListener('themeChanged', () => {
+    if (window.dashboardData && window.dashboardData.sales) {
+        initCharts(window.dashboardData.sales);
     }
-
-    // Sort dates for line chart
-    const sortedDates = Object.keys(dateMap).sort((a, b) => new Date(a) - new Date(b));
-    const sortedData = sortedDates.map(d => dateMap[d]);
-
-    renderLineChart(sortedDates, sortedData);
-    renderBarChart(Object.keys(destMap), Object.values(destMap));
-    renderDoughnutChart(Object.keys(regionMap), Object.values(regionMap));
-    
-    // Velocity Area Chart (Analytics Tab)
-    const ctxArea = document.getElementById('areaChart');
-    if (ctxArea) {
-        if (velocityAreaChart) velocityAreaChart.destroy();
-        velocityAreaChart = new Chart(ctxArea, {
-            type: 'line',
-            data: {
-                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-                datasets: [{
-                    label: 'Velocity',
-                    data: [12, 19, 15, 25, 22, 30, 28],
-                    borderColor: '#a855f7',
-                    backgroundColor: 'rgba(168, 85, 247, 0.2)',
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: premiumOptions
-        });
-    }
-
-    // Pending Chart (Analytics Tab)
-    const ctxPending = document.getElementById('pendingChart');
-    if (ctxPending) {
-        if (pendingChart) pendingChart.destroy();
-        pendingChart = new Chart(ctxPending, {
-            type: 'bar',
-            data: {
-                labels: ['Processed', 'Pending', 'Failed'],
-                datasets: [{
-                    label: 'Status',
-                    data: [85, 12, 3],
-                    backgroundColor: ['#10b981', '#f59e0b', '#f43f5e'],
-                    borderRadius: 4
-                }]
-            },
-            options: premiumOptions
-        });
-    }
-}
+});

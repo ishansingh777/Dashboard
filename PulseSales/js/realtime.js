@@ -1,50 +1,81 @@
 // js/realtime.js
 
-function setupRealtime() {
-    if (!supabaseClient) return;
+function setupMockRealtime() {
+    setInterval(() => {
+        if (!window.dashboardData || !window.dashboardData.orders) return;
+        
+        // Flash global live indicator
+        const ind = document.getElementById('global-live-indicator');
+        if (ind) {
+            ind.classList.remove('hidden');
+            setTimeout(() => {
+                if (Math.random() > 0.5) ind.classList.add('hidden');
+            }, 3000);
+        }
 
-    supabaseClient
-        .channel('public-changes')
-        .on('postgres_changes', { event: '*', schema: 'public', table: 'orders' }, payload => {
-            console.log('Realtime change received for orders!', payload);
-            fetchSupabaseData().then(() => {
-                if (typeof showToast === 'function') {
-                    showToast('🔔 New Order Received', 'success');
-                }
-            });
-        })
-        .on('postgres_changes', { event: '*', schema: 'public', table: 'users' }, payload => {
-            console.log('Realtime change received for users!', payload);
-            fetchSupabaseData().then(() => {
-                if (typeof showToast === 'function') {
-                    showToast('👤 New User Registered', 'success');
-                }
-            });
-        })
-        .on('postgres_changes', { event: '*', schema: 'public', table: 'products' }, payload => {
-            console.log('Realtime change received for products!', payload);
-            fetchSupabaseData().then(() => {
-                if (typeof showToast === 'function') {
-                    showToast('📦 Product Update', 'success');
-                }
-            });
-        })
-        .subscribe((status) => {
-            console.log('Supabase Realtime status:', status);
-            const debugRealtime = document.getElementById('debug-realtime');
-            const debugRealtimeUI = document.getElementById('debug-realtime-ui');
-            if (debugRealtime) {
-                debugRealtime.textContent = status === 'SUBSCRIBED' ? 'CONNECTED' : status;
+        // Generate new random order
+        const amt = (Math.random() * 500 + 50).toFixed(2);
+        const orderId = `ORD-${Math.floor(Math.random() * 9000 + 1000)}`;
+        const customers = ['Alex Morgan', 'Sarah Chen', 'Marcus Webb', 'Yuki Tanaka', 'James Wilson'];
+        const regions = ['North America', 'Asia-Pacific', 'Europe', 'Other'];
+        const products = ['Enterprise Cloud API', 'Pro Data Pipeline', 'Standard Analytics', 'Developer Seat'];
+        
+        const newOrder = {
+            id: orderId,
+            customer: customers[Math.floor(Math.random() * customers.length)],
+            product: products[Math.floor(Math.random() * products.length)],
+            region: regions[Math.floor(Math.random() * regions.length)],
+            amount: parseFloat(amt),
+            status: 'Processing',
+            time: 'Just now'
+        };
+
+        // Add to data array (unshift)
+        window.dashboardData.orders.unshift(newOrder);
+        
+        // Update Table UI
+        const tbody = document.getElementById('live-orders-tbody');
+        if (tbody) {
+            const tr = document.createElement('tr');
+            tr.className = 'new-row';
+            tr.innerHTML = `
+                <td class="order-id">${newOrder.id}</td>
+                <td><strong>${newOrder.customer}</strong></td>
+                <td>${newOrder.product}</td>
+                <td>${newOrder.region}</td>
+                <td class="amount">$${newOrder.amount.toFixed(2)}</td>
+                <td><span class="status-pill ${newOrder.status.toLowerCase()}">${newOrder.status}</span></td>
+                <td class="time">${newOrder.time}</td>
+            `;
+            tbody.insertBefore(tr, tbody.firstChild);
+            
+            // Remove last row to keep table size fixed
+            if (tbody.children.length > 8) {
+                tbody.removeChild(tbody.lastChild);
             }
-            if (debugRealtimeUI) {
-                debugRealtimeUI.textContent = status === 'SUBSCRIBED' ? 'Realtime Connected' : status;
-                if (status === 'SUBSCRIBED') {
-                    document.getElementById('connection-status').classList.remove('glow-amber');
-                    document.getElementById('connection-status').classList.add('glow-green');
-                } else {
-                    document.getElementById('connection-status').classList.remove('glow-green');
-                    document.getElementById('connection-status').classList.add('glow-amber');
-                }
-            }
-        });
+        }
+
+        // Show Toast
+        if (typeof showToast === 'function') {
+            showToast(`New order received — $${newOrder.amount.toFixed(2)}`, 'success');
+        }
+
+        // Slightly bump total revenue
+        if (window.dashboardData.sales) {
+            const m = window.dashboardData.sales.metrics;
+            m.total_revenue += newOrder.amount;
+            m.today_sales += newOrder.amount;
+            m.total_orders += 1;
+            
+            const revEl = document.getElementById('total-revenue-val');
+            if (revEl) revEl.textContent = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(m.total_revenue);
+            
+            const todayEl = document.getElementById('kpi-today-val');
+            if (todayEl) todayEl.textContent = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(m.today_sales);
+            
+            const ordersEl = document.getElementById('kpi-orders-val');
+            if (ordersEl) ordersEl.textContent = new Intl.NumberFormat('en-US').format(m.total_orders);
+        }
+
+    }, 8000); // Every 8 seconds
 }
