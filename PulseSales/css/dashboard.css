@@ -143,25 +143,52 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background: #ffffff;
-    border: 1px solid var(--panel-border);
+    background: #f8fafc;
+    border: 1px solid #94a3b8; /* Darker border for visibility */
     border-radius: 9999px;
     padding: 0 20px;
     width: 300px;
 }
 .header-search i {
-    color: var(--text-muted);
+    color: #334155; /* Darker icon */
 }
 .header-search input {
     background: transparent;
     border: none;
     box-shadow: none;
     width: 100%;
+    color: #0f172a; /* Explicit dark text */
+    font-weight: 500;
+}
+.header-search input::placeholder {
+    color: #64748b;
 }
 .header-controls {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+/* Ensure selects in header are clearly visible */
+.header-controls .glass-select {
+    border: 1px solid #94a3b8 !important;
+    background: #f8fafc !important;
+    color: #0f172a !important;
+    font-weight: 500;
+}
+.header-controls .glass-badge {
+    border: 1px solid #94a3b8 !important;
+    font-weight: 600;
+}
+.header-controls .glass-badge:not(.glow-green) {
+    color: #0f172a !important;
+}
+.header-controls .glass-badge.glow-green {
+    color: #059669 !important; /* Explicitly dark green */
+    border-color: #059669 !important;
+}
+.header-controls .icon-btn {
+    border: 1px solid #94a3b8 !important;
+    color: #334155 !important;
 }
 
 /* Tab Pages */
