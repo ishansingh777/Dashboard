@@ -129,8 +129,10 @@
             </header>
 
             <div class="scroll-container">
-                <!-- HERO / AI INSIGHT SECTION -->
-                <section class="hero-section">
+                <!-- TAB PANES -->
+                <div id="tab-overview" class="tab-pane active">
+                    <!-- HERO / AI INSIGHT SECTION -->
+                    <section class="hero-section">
                     <div class="hero-revenue card glass">
                         <div class="card-header">TOTAL REVENUE</div>
                         <div class="revenue-main">
@@ -401,6 +403,56 @@
                         </div>
                     </div>
                 </section>
+
+                </div> <!-- End tab-overview -->
+                
+                <div id="tab-analytics" class="tab-pane">
+                    <div class="card glass" style="padding: 48px; text-align: center;">
+                        <i data-lucide="bar-chart-2" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
+                        <h3>Analytics Hub</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">Detailed analytics will be configured here.</p>
+                    </div>
+                </div>
+
+                <div id="tab-orders" class="tab-pane">
+                    <div class="card glass" style="padding: 48px; text-align: center;">
+                        <i data-lucide="shopping-cart" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
+                        <h3>Order Management</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">Full order history and processing tools will appear here.</p>
+                    </div>
+                </div>
+
+                <div id="tab-customers" class="tab-pane">
+                    <div class="card glass" style="padding: 48px; text-align: center;">
+                        <i data-lucide="users" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
+                        <h3>Customer Directory</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">Customer segmentations and profiles.</p>
+                    </div>
+                </div>
+                
+                <div id="tab-products" class="tab-pane">
+                    <div class="card glass" style="padding: 48px; text-align: center;">
+                        <i data-lucide="package" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
+                        <h3>Product Inventory</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">Manage your SKUs and product nodes here.</p>
+                    </div>
+                </div>
+
+                <div id="tab-intelligence" class="tab-pane">
+                    <div class="card glass" style="padding: 48px; text-align: center;">
+                        <i data-lucide="globe" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
+                        <h3>Global Intelligence</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">Expanded geographical heatmaps.</p>
+                    </div>
+                </div>
+
+                <div id="tab-ai" class="tab-pane">
+                    <div class="card glass" style="padding: 48px; text-align: center;">
+                        <i data-lucide="sparkles" style="width: 48px; height: 48px; color: var(--accent-indigo); margin-bottom: 16px;"></i>
+                        <h3>AI Control Room</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">Deep AI analysis and automated suggestions.</p>
+                    </div>
+                </div>
 
             </div> <!-- End Scroll Container -->
         </main>

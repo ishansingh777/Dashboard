@@ -13,11 +13,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Tab switching logic
     const navItems = document.querySelectorAll('.nav-item');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    
     navItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
+            const targetTab = item.getAttribute('data-tab');
+            if (!targetTab) return;
+
+            // Update nav items
             navItems.forEach(nav => nav.classList.remove('active'));
             item.classList.add('active');
+            
+            // Smoothly update tab panes
+            tabPanes.forEach(pane => {
+                if (pane.id === `tab-${targetTab}`) {
+                    pane.classList.add('active');
+                    pane.style.animation = 'fadeInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+                } else {
+                    pane.classList.remove('active');
+                    pane.style.animation = 'none';
+                }
+            });
             
             // Close mobile menu on select
             const sidebar = document.getElementById('sidebar');
