@@ -407,34 +407,113 @@
                 </div> <!-- End tab-overview -->
                 
                 <div id="tab-analytics" class="tab-pane">
-                    <div class="card glass" style="padding: 48px; text-align: center;">
-                        <i data-lucide="bar-chart-2" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
-                        <h3>Analytics Hub</h3>
-                        <p style="color: var(--text-secondary); margin-top: 8px;">Detailed analytics will be configured here.</p>
+                    <div class="card glass">
+                        <div class="section-header">
+                            <h3>Analytics Hub</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Revenue</th>
+                                        <th>Orders</th>
+                                        <th>Customers</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="analytics-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
                 <div id="tab-orders" class="tab-pane">
-                    <div class="card glass" style="padding: 48px; text-align: center;">
-                        <i data-lucide="shopping-cart" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
-                        <h3>Order Management</h3>
-                        <p style="color: var(--text-secondary); margin-top: 8px;">Full order history and processing tools will appear here.</p>
+                    <div class="card glass">
+                        <div class="section-header">
+                            <h3>Order Management</h3>
+                            <div class="table-actions">
+                                <div class="search-box">
+                                    <i data-lucide="search"></i>
+                                    <input type="text" placeholder="Search orders...">
+                                </div>
+                                <button class="icon-btn"><i data-lucide="filter"></i></button>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Customer</th>
+                                        <th>Product</th>
+                                        <th>Region</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="orders-page-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
                 <div id="tab-customers" class="tab-pane">
-                    <div class="card glass" style="padding: 48px; text-align: center;">
-                        <i data-lucide="users" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
-                        <h3>Customer Directory</h3>
-                        <p style="color: var(--text-secondary); margin-top: 8px;">Customer segmentations and profiles.</p>
+                    <div class="card glass">
+                        <div class="section-header">
+                            <h3>Customer Directory</h3>
+                            <div class="table-actions">
+                                <div class="search-box">
+                                    <i data-lucide="search"></i>
+                                    <input type="text" placeholder="Search customers...">
+                                </div>
+                                <button class="btn primary">Add Customer</button>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Customer ID</th>
+                                        <th>Name</th>
+                                        <th>Tier</th>
+                                        <th>Lifetime Value</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="customers-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 
                 <div id="tab-products" class="tab-pane">
-                    <div class="card glass" style="padding: 48px; text-align: center;">
-                        <i data-lucide="package" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
-                        <h3>Product Inventory</h3>
-                        <p style="color: var(--text-secondary); margin-top: 8px;">Manage your SKUs and product nodes here.</p>
+                    <div class="card glass">
+                        <div class="section-header">
+                            <h3>Product Inventory</h3>
+                            <div class="table-actions">
+                                <button class="btn primary">Add Product</button>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Name</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Stock</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="products-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 

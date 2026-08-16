@@ -1,0 +1,7 @@
+[
+    { "id": "PRD-001", "name": "Enterprise Cloud API", "category": "API", "price": 1250.00, "stock": "Unlimited", "status": "Active" },
+    { "id": "PRD-002", "name": "Pro Data Pipeline", "category": "Data", "price": 499.00, "stock": "Unlimited", "status": "Active" },
+    { "id": "PRD-003", "name": "Standard Analytics", "category": "Analytics", "price": 199.00, "stock": "Unlimited", "status": "Active" },
+    { "id": "PRD-004", "name": "Developer Seat", "category": "License", "price": 49.00, "stock": "Unlimited", "status": "Active" },
+    { "id": "PRD-005", "name": "Legacy Dashboard", "category": "Analytics", "price": 99.00, "stock": "Deprecated", "status": "Inactive" }
+]

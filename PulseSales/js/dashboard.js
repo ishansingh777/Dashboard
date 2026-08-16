@@ -3,20 +3,23 @@
 window.dashboardData = {
     sales: null,
     orders: null,
-    customers: null
+    customers: null,
+    products: null
 };
 
 async function loadDashboardData() {
     try {
-        const [salesRes, ordersRes, customersRes] = await Promise.all([
+        const [salesRes, ordersRes, customersRes, productsRes] = await Promise.all([
             fetch('data/sales.json'),
             fetch('data/orders.json'),
-            fetch('data/customers.json')
+            fetch('data/customers.json'),
+            fetch('data/products.json')
         ]);
 
         window.dashboardData.sales = await salesRes.json();
         window.dashboardData.orders = await ordersRes.json();
         window.dashboardData.customers = await customersRes.json();
+        window.dashboardData.products = await productsRes.json();
 
         populateUI();
         if (typeof initCharts === 'function') initCharts(window.dashboardData.sales);
@@ -77,11 +80,79 @@ function populateUI() {
     // Re-init icons for dynamic content
     if (typeof lucide !== 'undefined') lucide.createIcons();
 
-    // Render Orders Table
+    // Render Orders Table in overview
     renderOrdersTable(orders);
+    
+    // Render full tables for tabs
+    renderAnalyticsTable(sales.monthly_revenue);
+    renderOrdersPageTable(orders);
+    renderCustomersTable(window.dashboardData.customers);
+    renderProductsTable(window.dashboardData.products);
     
     // Render Hero Sparkline
     renderHeroSparkline(sales.weekly_revenue.map(d => d.value));
+}
+
+function renderAnalyticsTable(monthlyData) {
+    const tbody = document.getElementById('analytics-tbody');
+    if (!tbody || !monthlyData) return;
+    
+    tbody.innerHTML = monthlyData.map(d => `
+        <tr>
+            <td><strong>${d.month}</strong></td>
+            <td class="amount">${formatCurrency(d.revenue)}</td>
+            <td>${formatNumber(d.orders)}</td>
+            <td>${formatNumber(d.customers)}</td>
+        </tr>
+    `).join('');
+}
+
+function renderOrdersPageTable(orders) {
+    const tbody = document.getElementById('orders-page-tbody');
+    if (!tbody || !orders) return;
+    
+    tbody.innerHTML = orders.map(o => `
+        <tr>
+            <td class="order-id">${o.id}</td>
+            <td><strong>${o.customer}</strong></td>
+            <td>${o.product}</td>
+            <td>${o.region}</td>
+            <td class="amount">${formatCurrency(o.amount)}</td>
+            <td><span class="status-pill ${o.status.toLowerCase()}">${o.status}</span></td>
+            <td class="time">${o.time}</td>
+        </tr>
+    `).join('');
+}
+
+function renderCustomersTable(customers) {
+    const tbody = document.getElementById('customers-tbody');
+    if (!tbody || !customers) return;
+    
+    tbody.innerHTML = customers.map(c => `
+        <tr>
+            <td class="order-id">${c.id}</td>
+            <td><strong>${c.name}</strong></td>
+            <td>${c.tier}</td>
+            <td class="amount">${formatCurrency(c.ltv)}</td>
+            <td><span class="status-pill ${c.status === 'Active' ? 'completed' : 'refunded'}">${c.status}</span></td>
+        </tr>
+    `).join('');
+}
+
+function renderProductsTable(products) {
+    const tbody = document.getElementById('products-tbody');
+    if (!tbody || !products) return;
+    
+    tbody.innerHTML = products.map(p => `
+        <tr>
+            <td class="order-id">${p.id}</td>
+            <td><strong>${p.name}</strong></td>
+            <td>${p.category}</td>
+            <td class="amount">${formatCurrency(p.price)}</td>
+            <td>${p.stock}</td>
+            <td><span class="status-pill ${p.status === 'Active' ? 'completed' : 'refunded'}">${p.status}</span></td>
+        </tr>
+    `).join('');
 }
 
 function renderOrdersTable(orders) {
