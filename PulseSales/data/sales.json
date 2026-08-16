@@ -1,13 +1,13 @@
 {
     "metrics": {
-        "total_revenue": 695534.83,
+        "total_revenue": 2143018.990000066,
         "revenue_growth": 12.8,
-        "gross_volume": 706608.78,
+        "gross_volume": 2154092.940000066,
         "discounts": 11073.95,
-        "aov": 695.53,
+        "aov": 756.9830413281759,
         "today_sales": 24832.42,
         "today_growth": 8.4,
-        "total_orders": 1000,
+        "total_orders": 2831,
         "orders_growth": 6.2,
         "pending_orders": 127,
         "pending_growth": -4.1,
@@ -23,21 +23,77 @@
         "other": 102000
     },
     "weekly_revenue": [
-        {"day": "Mon", "value": 82000},
-        {"day": "Tue", "value": 94000},
-        {"day": "Wed", "value": 112000},
-        {"day": "Thu", "value": 108000},
-        {"day": "Fri", "value": 125000},
-        {"day": "Sat", "value": 98000},
-        {"day": "Sun", "value": 85000}
+        {
+            "day": "Mon",
+            "value": 82000
+        },
+        {
+            "day": "Tue",
+            "value": 94000
+        },
+        {
+            "day": "Wed",
+            "value": 112000
+        },
+        {
+            "day": "Thu",
+            "value": 108000
+        },
+        {
+            "day": "Fri",
+            "value": 125000
+        },
+        {
+            "day": "Sat",
+            "value": 98000
+        },
+        {
+            "day": "Sun",
+            "value": 85000
+        }
     ],
     "monthly_revenue": [
-        {"month": "Jan", "revenue": 450000, "orders": 600, "customers": 1200},
-        {"month": "Feb", "revenue": 480000, "orders": 650, "customers": 1300},
-        {"month": "Mar", "revenue": 520000, "orders": 710, "customers": 1450},
-        {"month": "Apr", "revenue": 510000, "orders": 700, "customers": 1420},
-        {"month": "May", "revenue": 590000, "orders": 820, "customers": 1700},
-        {"month": "Jun", "revenue": 610000, "orders": 850, "customers": 1800},
-        {"month": "Jul", "revenue": 695534, "orders": 1000, "customers": 2481}
+        {
+            "month": "Jan",
+            "revenue": 450000,
+            "orders": 600,
+            "customers": 1200
+        },
+        {
+            "month": "Feb",
+            "revenue": 480000,
+            "orders": 650,
+            "customers": 1300
+        },
+        {
+            "month": "Mar",
+            "revenue": 520000,
+            "orders": 710,
+            "customers": 1450
+        },
+        {
+            "month": "Apr",
+            "revenue": 510000,
+            "orders": 700,
+            "customers": 1420
+        },
+        {
+            "month": "May",
+            "revenue": 590000,
+            "orders": 820,
+            "customers": 1700
+        },
+        {
+            "month": "Jun",
+            "revenue": 610000,
+            "orders": 850,
+            "customers": 1800
+        },
+        {
+            "month": "Jul",
+            "revenue": 695534,
+            "orders": 1000,
+            "customers": 2481
+        }
     ]
 }
