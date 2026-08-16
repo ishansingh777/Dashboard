@@ -62,6 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 pageTitle.textContent = text;
             }
             
+            // Force charts to resize if they were hidden
+            window.dispatchEvent(new Event('resize'));
+            
             if (sidebar && window.innerWidth <= 768) {
                 sidebar.classList.remove('open');
             }

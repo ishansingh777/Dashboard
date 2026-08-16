@@ -76,3 +76,30 @@ function renderActivityStream() {
         </div>
     `).join('');
 }
+
+function renderDeepInsightsFeed() {
+    const container = document.getElementById('deep-insights-feed');
+    if (!container) return;
+
+    const insights = [
+        { type: 'green', icon: 'trending-up', title: 'Revenue acceleration', desc: 'Revenue grew by 12.8% this period, outperforming the rolling average.', time: 'Just now' },
+        { type: 'blue', icon: 'globe', title: 'Regional strength', desc: 'North America is currently the top performing region, driving over 50% of gross volume.', time: '2 hours ago' },
+        { type: 'amber', icon: 'alert-circle', title: 'Fulfillment delay', desc: 'Pending orders have increased by 7.2% in the last 24 hours. Check fulfillment queue.', time: '5 hours ago' },
+        { type: 'blue', icon: 'users', title: 'Customer retention', desc: 'Repeat purchase rate is up 4% compared to last quarter.', time: '1 day ago' },
+        { type: 'amber', icon: 'shopping-bag', title: 'Low stock warning', desc: 'Wireless Earbuds Pro are projected to run out of stock in 4 days.', time: '1 day ago' },
+        { type: 'green', icon: 'mouse-pointer', title: 'Conversion spike', desc: 'Checkout conversion rate spiked to 9.1% during the weekend sale.', time: '2 days ago' }
+    ];
+
+    container.innerHTML = insights.map(ins => `
+        <div class="insight-item">
+            <div class="insight-icon ${ins.type}">
+                <i data-lucide="${ins.icon}"></i>
+            </div>
+            <div class="insight-content">
+                <h4>${ins.title}</h4>
+                <p>${ins.desc}</p>
+                <span class="insight-time">${ins.time}</span>
+            </div>
+        </div>
+    `).join('');
+}

@@ -166,3 +166,113 @@ document.addEventListener('themeChanged', () => {
         initCharts();
     }
 });
+
+let intelInsightsChartInstance = null;
+let forecastChartInstance = null;
+let funnelChartInstance = null;
+
+function initIntelCharts() {
+    const colors = getChartColors();
+    const isDark = document.body.classList.contains('dark-mode');
+    
+    // 1. Insights Donut
+    const insightsCtx = document.getElementById('insights-donut-chart');
+    if (insightsCtx) {
+        if (intelInsightsChartInstance) intelInsightsChartInstance.destroy();
+        const bgColors = isDark 
+            ? ['#34D399', '#6366F1', '#FBBF24']
+            : ['#10B981', '#4F46E5', '#F59E0B'];
+            
+        intelInsightsChartInstance = new Chart(insightsCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Growth Opportunities', 'Neutral Observations', 'Risk Signals'],
+                datasets: [{ data: [12, 8, 4], backgroundColor: bgColors, borderWidth: 0, cutout: '70%' }]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: colors.text, font: { family: 'Inter', size: 12 }, padding: 20 } }
+                }
+            }
+        });
+    }
+
+    // 2. Forecast Line Chart
+    const forecastCtx = document.getElementById('forecast-chart');
+    if (forecastCtx) {
+        if (forecastChartInstance) forecastChartInstance.destroy();
+        
+        const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct (Proj)', 'Nov (Proj)', 'Dec (Proj)'];
+        const historical = [120, 135, 125, 145, 160, 175, 170, 190, 210, null, null, null];
+        const projected = [null, null, null, null, null, null, null, null, 210, 230, 260, 290];
+        
+        forecastChartInstance = new Chart(forecastCtx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Historical Revenue',
+                        data: historical,
+                        borderColor: colors.primary,
+                        borderWidth: 3,
+                        tension: 0.4,
+                        pointRadius: 4,
+                        pointBackgroundColor: colors.primary
+                    },
+                    {
+                        label: 'Projected Revenue',
+                        data: projected,
+                        borderColor: isDark ? '#22D3EE' : '#06B6D4',
+                        borderWidth: 3,
+                        borderDash: [5, 5],
+                        tension: 0.4,
+                        pointRadius: 4,
+                        pointBackgroundColor: isDark ? '#22D3EE' : '#06B6D4'
+                    }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'top', labels: { color: colors.text, font: { family: 'Inter' } } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: { grid: { display: false }, ticks: { color: colors.text } },
+                    y: { grid: { color: colors.grid, borderDash: [4, 4] }, ticks: { color: colors.text, callback: val => '$' + val + 'k' } }
+                }
+            }
+        });
+    }
+
+    // 3. Conversion Funnel (Bar chart styled as funnel)
+    const funnelCtx = document.getElementById('funnel-chart');
+    if (funnelCtx) {
+        if (funnelChartInstance) funnelChartInstance.destroy();
+        
+        funnelChartInstance = new Chart(funnelCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Site Visitors', 'Added to Cart', 'Reached Checkout', 'Purchased'],
+                datasets: [{
+                    label: 'Users',
+                    data: [15000, 4500, 2100, 1050],
+                    backgroundColor: colors.primary,
+                    borderRadius: 6,
+                    barPercentage: 0.6
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { grid: { display: false }, ticks: { display: false } },
+                    y: { grid: { display: false }, ticks: { color: colors.text, font: { family: 'Inter', size: 13 } } }
+                }
+            }
+        });
+    }
+}

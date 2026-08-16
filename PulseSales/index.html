@@ -407,24 +407,70 @@
                     </div>
                 </div>
                 <div id="tab-insights" class="tab-pane">
-                    <div class="empty-state">
-                        <i data-lucide="lightbulb"></i>
-                        <h3>Deep Insights</h3>
-                        <p>Advanced anomaly detection and trends.</p>
+                    <div class="analytics-grid-65-35">
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Intelligence Feed</h3>
+                            </div>
+                            <div class="panel-body insights-list" id="deep-insights-feed">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Insight Distribution</h3>
+                            </div>
+                            <div class="panel-body chart-container donut-container" style="height: 300px;">
+                                <canvas id="insights-donut-chart"></canvas>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-forecast" class="tab-pane">
-                    <div class="empty-state">
-                        <i data-lucide="trending-up"></i>
-                        <h3>Revenue Forecast</h3>
-                        <p>Predictive modeling for future quarters.</p>
+                    <section class="kpi-strip" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="kpi-card panel">
+                            <div class="kpi-top"><span class="kpi-title">Expected Q4 Revenue</span><span class="kpi-trend positive">+14%</span></div>
+                            <div class="kpi-value">$845,200</div>
+                        </div>
+                        <div class="kpi-card panel">
+                            <div class="kpi-top"><span class="kpi-title">Predicted Growth</span><span class="kpi-trend positive">+8.2%</span></div>
+                            <div class="kpi-value">Stable</div>
+                        </div>
+                        <div class="kpi-card panel">
+                            <div class="kpi-top"><span class="kpi-title">Churn Probability</span><span class="kpi-trend positive">-1.5%</span></div>
+                            <div class="kpi-value">2.4%</div>
+                        </div>
+                    </section>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Revenue Projection Model</h3>
+                        </div>
+                        <div class="panel-body chart-container" style="height: 400px;">
+                            <canvas id="forecast-chart"></canvas>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-performance" class="tab-pane">
-                    <div class="empty-state">
-                        <i data-lucide="activity"></i>
-                        <h3>System Performance</h3>
-                        <p>Platform health and conversion funnels.</p>
+                    <div class="analytics-grid-65-35">
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Conversion Funnel</h3>
+                            </div>
+                            <div class="panel-body chart-container" style="height: 350px;">
+                                <canvas id="funnel-chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>System Health</h3>
+                            </div>
+                            <div class="panel-body list-container">
+                                <div class="list-row"><div class="list-col-left"><strong>API Latency</strong><span>Global Average</span></div><div class="list-col-right"><strong class="positive">42ms</strong></div></div>
+                                <div class="list-row"><div class="list-col-left"><strong>Uptime</strong><span>Last 90 days</span></div><div class="list-col-right"><strong class="positive">99.99%</strong></div></div>
+                                <div class="list-row"><div class="list-col-left"><strong>Database Load</strong><span>Primary Cluster</span></div><div class="list-col-right"><strong>12%</strong></div></div>
+                                <div class="list-row"><div class="list-col-left"><strong>Error Rate</strong><span>5xx responses</span></div><div class="list-col-right"><strong class="positive">0.01%</strong></div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div> <!-- End Scroll Container -->

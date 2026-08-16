@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (typeof renderOrdersTable === 'function') renderOrdersTable();
             if (typeof renderInsights === 'function') renderInsights();
             if (typeof renderActivityStream === 'function') renderActivityStream();
+            if (typeof renderDeepInsightsFeed === 'function') renderDeepInsightsFeed();
+            if (typeof initIntelCharts === 'function') initIntelCharts();
             
             // Render full tables
             if (typeof renderAnalyticsTable === 'function') renderAnalyticsTable();
