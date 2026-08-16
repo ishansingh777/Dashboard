@@ -5,6 +5,7 @@ window.store = {
     orders: null,
     customers: null,
     products: null,
+    destinations: null,
     
     // Calculated metrics
     metrics: {}
@@ -12,17 +13,19 @@ window.store = {
 
 async function loadData() {
     try {
-        const [salesRes, ordersRes, customersRes, productsRes] = await Promise.all([
+        const [salesRes, ordersRes, customersRes, productsRes, destinationsRes] = await Promise.all([
             fetch('data/sales.json'),
             fetch('data/orders.json'),
             fetch('data/customers.json'),
-            fetch('data/products.json')
+            fetch('data/products.json'),
+            fetch('data/destinations.json')
         ]);
 
         window.store.sales = await salesRes.json();
         window.store.orders = await ordersRes.json();
         window.store.customers = await customersRes.json();
         window.store.products = await productsRes.json();
+        window.store.destinations = await destinationsRes.json();
 
         calculateMetrics();
         return true;

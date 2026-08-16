@@ -1,0 +1,2130 @@
+[
+    {
+        "id": "ABW",
+        "type": "Country",
+        "name": "Aruba",
+        "flag": "https://flagcdn.com/w320/aw.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "AFG",
+        "type": "Country",
+        "name": "Afghanistan",
+        "flag": "https://flagcdn.com/w320/af.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "AFR",
+        "type": "Region",
+        "name": "Africa",
+        "flag": "https://api.voyx.in/VOYX/regionalFlags/AFR.png",
+        "included": "COD,LSO,MOZ,REU,ZAF,TZA,TUN",
+        "active": "Active"
+    },
+    {
+        "id": "AGO",
+        "type": "Country",
+        "name": "Angola",
+        "flag": "https://flagcdn.com/w320/ao.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "AIA",
+        "type": "Country",
+        "name": "Anguilla",
+        "flag": "https://flagcdn.com/w320/ai.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ALA",
+        "type": "Country",
+        "name": "Aland Islands",
+        "flag": "https://flagcdn.com/w320/ax.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ALB",
+        "type": "Country",
+        "name": "Albania",
+        "flag": "https://flagcdn.com/w320/al.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "AMR",
+        "type": "Region",
+        "name": "America",
+        "flag": "https://api.voyx.in/VOYX/regionalFlags/AMR.png",
+        "included": "CAN,MEX,USA",
+        "active": "Inactive"
+    },
+    {
+        "id": "AND",
+        "type": "Country",
+        "name": "Andorra",
+        "flag": "https://flagcdn.com/w320/ad.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ANT",
+        "type": "Country",
+        "name": "Netherlands Antilles",
+        "flag": "https://cdn.britannica.com/63/69563-050-79B6CA5A/Flag-Netherlands-Antilles.jpg",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ARE",
+        "type": "Country",
+        "name": "United Arab Emirates",
+        "flag": "https://flagcdn.com/w320/ae.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ARG",
+        "type": "Country",
+        "name": "Argentina",
+        "flag": "https://flagcdn.com/w320/ar.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ARM",
+        "type": "Country",
+        "name": "Armenia",
+        "flag": "https://flagcdn.com/w320/am.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ASI",
+        "type": "Region",
+        "name": "Asia",
+        "flag": "https://api.voyx.in/VOYX/regionalFlags/ASI.png",
+        "included": "EGY,KEN,MAR,MDG,MUS,NGA,NIC,TUN,TZA,UGA,ZAF,ZMB",
+        "active": "Active"
+    },
+    {
+        "id": "ASM",
+        "type": "Country",
+        "name": "American Samoa",
+        "flag": "https://flagcdn.com/w320/as.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ATA",
+        "type": "Country",
+        "name": "Antarctica",
+        "flag": "https://flagcdn.com/w320/aq.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ATF",
+        "type": "Country",
+        "name": "French Southern and Antarctic Lands",
+        "flag": "https://flagcdn.com/w320/tf.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ATG",
+        "type": "Country",
+        "name": "Antigua and Barbuda",
+        "flag": "https://flagcdn.com/w320/ag.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "AUS",
+        "type": "Country",
+        "name": "Australia",
+        "flag": "https://flagcdn.com/w320/au.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "AUT",
+        "type": "Country",
+        "name": "Austria",
+        "flag": "https://flagcdn.com/w320/at.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "AZE",
+        "type": "Country",
+        "name": "Azerbaijan",
+        "flag": "https://flagcdn.com/w320/az.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BDI",
+        "type": "Country",
+        "name": "Burundi",
+        "flag": "https://flagcdn.com/w320/bi.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BEL",
+        "type": "Country",
+        "name": "Belgium",
+        "flag": "https://flagcdn.com/w320/be.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BEN",
+        "type": "Country",
+        "name": "Benin",
+        "flag": "https://flagcdn.com/w320/bj.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BES",
+        "type": "Country",
+        "name": "Caribbean Netherlands",
+        "flag": "https://flagcdn.com/w320/bq.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BFA",
+        "type": "Country",
+        "name": "Burkina Faso",
+        "flag": "https://flagcdn.com/w320/bf.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BGD",
+        "type": "Country",
+        "name": "Bangladesh",
+        "flag": "https://flagcdn.com/w320/bd.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BGR",
+        "type": "Country",
+        "name": "Bulgaria",
+        "flag": "https://flagcdn.com/w320/bg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BHR",
+        "type": "Country",
+        "name": "Bahrain",
+        "flag": "https://flagcdn.com/w320/bh.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BHS",
+        "type": "Country",
+        "name": "Bahamas",
+        "flag": "https://flagcdn.com/w320/bs.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BIH",
+        "type": "Country",
+        "name": "Bosnia and Herzegovina",
+        "flag": "https://flagcdn.com/w320/ba.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BLM",
+        "type": "Country",
+        "name": "Saint Barthelemy",
+        "flag": "https://flagcdn.com/w320/bl.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BLR",
+        "type": "Country",
+        "name": "Belarus",
+        "flag": "https://flagcdn.com/w320/by.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BLZ",
+        "type": "Country",
+        "name": "Belize",
+        "flag": "https://flagcdn.com/w320/bz.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BMU",
+        "type": "Country",
+        "name": "Bermuda",
+        "flag": "https://flagcdn.com/w320/bm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BOL",
+        "type": "Country",
+        "name": "Bolivia",
+        "flag": "https://flagcdn.com/w320/bo.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BRA",
+        "type": "Country",
+        "name": "Brazil",
+        "flag": "https://flagcdn.com/w320/br.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BRB",
+        "type": "Country",
+        "name": "Barbados",
+        "flag": "https://flagcdn.com/w320/bb.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BRN",
+        "type": "Country",
+        "name": "Brunei Darussalam",
+        "flag": "https://flagcdn.com/w320/bn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "BTN",
+        "type": "Country",
+        "name": "Bhutan",
+        "flag": "https://flagcdn.com/w320/bt.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BVT",
+        "type": "Country",
+        "name": "Bouvet Island",
+        "flag": "https://flagcdn.com/w320/bv.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "BWA",
+        "type": "Country",
+        "name": "Botswana",
+        "flag": "https://flagcdn.com/w320/bw.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CAF",
+        "type": "Country",
+        "name": "Central African Republic",
+        "flag": "https://flagcdn.com/w320/cf.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CAN",
+        "type": "Country",
+        "name": "Canada",
+        "flag": "https://flagcdn.com/w320/ca.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CAR",
+        "type": "Region",
+        "name": "Caribean",
+        "flag": "",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CCK",
+        "type": "Country",
+        "name": "Cocos (Keeling) Islands",
+        "flag": "https://flagcdn.com/w320/cc.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CHE",
+        "type": "Country",
+        "name": "Switzerland",
+        "flag": "https://flagcdn.com/w320/ch.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CHL",
+        "type": "Country",
+        "name": "Chile",
+        "flag": "https://flagcdn.com/w320/cl.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CHN",
+        "type": "Country",
+        "name": "China",
+        "flag": "https://flagcdn.com/w320/cn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CIV",
+        "type": "Country",
+        "name": "Cote d Ivoire",
+        "flag": "https://flagcdn.com/w320/ci.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CMR",
+        "type": "Country",
+        "name": "Cameroon",
+        "flag": "https://flagcdn.com/w320/cm.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "COD",
+        "type": "Country",
+        "name": "Democratic Republic of the Congo",
+        "flag": "https://flagcdn.com/w320/cd.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "COG",
+        "type": "Country",
+        "name": "Republic of the Congo",
+        "flag": "https://flagcdn.com/w320/cg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "COK",
+        "type": "Country",
+        "name": "Cook Islands",
+        "flag": "https://flagcdn.com/w320/ck.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "COL",
+        "type": "Country",
+        "name": "Colombia",
+        "flag": "https://flagcdn.com/w320/co.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "COM",
+        "type": "Country",
+        "name": "Comoros",
+        "flag": "https://flagcdn.com/w320/km.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CPV",
+        "type": "Country",
+        "name": "Cabo Verde",
+        "flag": "https://flagcdn.com/w320/cv.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CRI",
+        "type": "Country",
+        "name": "Costa Rica",
+        "flag": "https://flagcdn.com/w320/cr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CUB",
+        "type": "Country",
+        "name": "Cuba",
+        "flag": "https://flagcdn.com/w320/cu.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CUW",
+        "type": "Country",
+        "name": "Curacao",
+        "flag": "https://flagcdn.com/w320/cw.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CXR",
+        "type": "Country",
+        "name": "Christmas Island",
+        "flag": "https://flagcdn.com/w320/cx.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CYM",
+        "type": "Country",
+        "name": "Cayman Islands",
+        "flag": "https://flagcdn.com/w320/ky.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "CYP",
+        "type": "Country",
+        "name": "Cyprus",
+        "flag": "https://flagcdn.com/w320/cy.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "CZE",
+        "type": "Country",
+        "name": "Czech Republic",
+        "flag": "https://flagcdn.com/w320/cz.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "DEU",
+        "type": "Country",
+        "name": "Germany",
+        "flag": "https://flagcdn.com/w320/de.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "DJI",
+        "type": "Country",
+        "name": "Djibouti",
+        "flag": "https://flagcdn.com/w320/dj.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "DMA",
+        "type": "Country",
+        "name": "Dominica",
+        "flag": "https://flagcdn.com/w320/dm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "DNK",
+        "type": "Country",
+        "name": "Denmark",
+        "flag": "https://flagcdn.com/w320/dk.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "DOM",
+        "type": "Country",
+        "name": "Dominican Republic",
+        "flag": "https://flagcdn.com/w320/do.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "DZA",
+        "type": "Country",
+        "name": "Algeria",
+        "flag": "https://flagcdn.com/w320/dz.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ECU",
+        "type": "Country",
+        "name": "Ecuador",
+        "flag": "https://flagcdn.com/w320/ec.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "EGY",
+        "type": "Country",
+        "name": "Egypt",
+        "flag": "https://flagcdn.com/w320/eg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ERI",
+        "type": "Country",
+        "name": "Eritrea",
+        "flag": "https://flagcdn.com/w320/er.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ESH",
+        "type": "Country",
+        "name": "Western Sahara",
+        "flag": "https://flagcdn.com/w320/eh.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ESP",
+        "type": "Country",
+        "name": "Spain",
+        "flag": "https://flagcdn.com/w320/es.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "EST",
+        "type": "Country",
+        "name": "Estonia",
+        "flag": "https://flagcdn.com/w320/ee.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ETH",
+        "type": "Country",
+        "name": "Ethiopia",
+        "flag": "https://flagcdn.com/w320/et.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "EUR",
+        "type": "Region",
+        "name": "Europe",
+        "flag": "https://api.voyx.in/VOYX/regionalFlags/EUR.png",
+        "included": "ALB , AND , ARM , AZE , BLR , BIH , FRO , PYF , GEO , GIB , GRL , ISL , KAZ , XKX , KGZ , LIE , MKD , MDA , MCO , MNE , NOR , RUS , SRB , CHE , TJK , TUR , TKM , GGY , IMN , JEY , UKR , GBR , UZB\n",
+        "active": "Active"
+    },
+    {
+        "id": "FIN",
+        "type": "Country",
+        "name": "Finland",
+        "flag": "https://flagcdn.com/w320/fi.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "FJI",
+        "type": "Country",
+        "name": "Fiji",
+        "flag": "https://flagcdn.com/w320/fj.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "FLK",
+        "type": "Country",
+        "name": "Falkland Islands",
+        "flag": "https://flagcdn.com/w320/fk.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "FRA",
+        "type": "Country",
+        "name": "France",
+        "flag": "https://flagcdn.com/w320/fr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "FRO",
+        "type": "Country",
+        "name": "Faroe Islands",
+        "flag": "https://flagcdn.com/w320/fo.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "FSM",
+        "type": "Country",
+        "name": "Micronesia",
+        "flag": "https://flagcdn.com/w320/fm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "GAB",
+        "type": "Country",
+        "name": "Gabon",
+        "flag": "https://flagcdn.com/w320/ga.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GBR",
+        "type": "Country",
+        "name": "United Kingdom",
+        "flag": "https://flagcdn.com/w320/gb.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GCHN",
+        "type": "Region",
+        "name": "Greater China",
+        "flag": "",
+        "included": "CHN,HKG,MAC",
+        "active": "Active"
+    },
+    {
+        "id": "GEO",
+        "type": "Country",
+        "name": "Georgia",
+        "flag": "https://flagcdn.com/w320/ge.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GGY",
+        "type": "Country",
+        "name": "Guernsey",
+        "flag": "https://flagcdn.com/w320/gg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GHA",
+        "type": "Country",
+        "name": "Ghana",
+        "flag": "https://flagcdn.com/w320/gh.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GIB",
+        "type": "Country",
+        "name": "Gibraltar",
+        "flag": "https://flagcdn.com/w320/gi.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GIN",
+        "type": "Country",
+        "name": "Guinea",
+        "flag": "https://flagcdn.com/w320/gn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GLB",
+        "type": "Region",
+        "name": "Global",
+        "flag": "https://api.voyx.in/VOYX/regionalFlags/GLB.png",
+        "included": "ARM, AZE, BGD, BEN, BWA, BFA, KHM, CMR, CHN, COG, KOR, CIV, EGY, GAB, GEO, GHA, GIN, ZAF, ARE, GNB, HKG, IMN, FRO, IND, IDN, JEY, JOR, KAZ, KWT, LAO, LBR, MAC, MDG, MYS, MLI, MOZ, MMR, NGA, OMN, UZB, PAK, PSE, PHL, QAT, CAF, SEN, SGP, LKA, SWZ, TWN, TZA, THA, VNM, YEM, ZMB, ALB, BLR, BIH, XKX, MKD, MDA, MNE, SRB, UKR, DZA, MAR, TUN, TUR, GI, SYC",
+        "active": "Active"
+    },
+    {
+        "id": "GLP",
+        "type": "Country",
+        "name": "Guadeloupe",
+        "flag": "https://flagcdn.com/w320/gp.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GMB",
+        "type": "Country",
+        "name": "Gambia",
+        "flag": "https://flagcdn.com/w320/gm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "GNB",
+        "type": "Country",
+        "name": "Guinea-Bissau",
+        "flag": "https://flagcdn.com/w320/gw.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GNQ",
+        "type": "Country",
+        "name": "Equatorial Guinea",
+        "flag": "https://flagcdn.com/w320/gq.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "GRC",
+        "type": "Country",
+        "name": "Greece",
+        "flag": "https://flagcdn.com/w320/gr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GRD",
+        "type": "Country",
+        "name": "Grenada",
+        "flag": "https://flagcdn.com/w320/gd.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "GRL",
+        "type": "Country",
+        "name": "Greenland",
+        "flag": "https://flagcdn.com/w320/gl.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "GTM",
+        "type": "Country",
+        "name": "Guatemala",
+        "flag": "https://flagcdn.com/w320/gt.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GUF",
+        "type": "Country",
+        "name": "French Guiana",
+        "flag": "https://flagcdn.com/w320/gf.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "GUM",
+        "type": "Country",
+        "name": "Guam",
+        "flag": "https://flagcdn.com/w320/gu.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "GUY",
+        "type": "Country",
+        "name": "Guyana",
+        "flag": "https://flagcdn.com/w320/gy.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "HKG",
+        "type": "Country",
+        "name": "Hong Kong",
+        "flag": "https://flagcdn.com/w320/hk.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "HKMC",
+        "type": "Region",
+        "name": "SARs of China",
+        "flag": "",
+        "included": "HKG,MAC",
+        "active": "Active"
+    },
+    {
+        "id": "HMD",
+        "type": "Country",
+        "name": "Heard Island and McDonald Islands",
+        "flag": "https://flagcdn.com/w320/hm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "HND",
+        "type": "Country",
+        "name": "Honduras",
+        "flag": "https://flagcdn.com/w320/hn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "HRV",
+        "type": "Country",
+        "name": "Croatia",
+        "flag": "https://flagcdn.com/w320/hr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "HTI",
+        "type": "Country",
+        "name": "Haiti",
+        "flag": "https://flagcdn.com/w320/ht.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "HUN",
+        "type": "Country",
+        "name": "Hungary",
+        "flag": "https://flagcdn.com/w320/hu.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "IDN",
+        "type": "Country",
+        "name": "Indonesia",
+        "flag": "https://flagcdn.com/w320/id.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "IMN",
+        "type": "Country",
+        "name": "Isle of Man",
+        "flag": "https://flagcdn.com/w320/im.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "IND",
+        "type": "Country",
+        "name": "India",
+        "flag": "https://flagcdn.com/w320/in.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "IOT",
+        "type": "Country",
+        "name": "British Indian Ocean Territory",
+        "flag": "https://flagcdn.com/w320/io.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "IRL",
+        "type": "Country",
+        "name": "Ireland",
+        "flag": "https://flagcdn.com/w320/ie.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "IRN",
+        "type": "Country",
+        "name": "Iran",
+        "flag": "https://flagcdn.com/w320/ir.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "IRQ",
+        "type": "Country",
+        "name": "Iraq",
+        "flag": "https://flagcdn.com/w320/iq.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ISL",
+        "type": "Country",
+        "name": "Iceland",
+        "flag": "https://flagcdn.com/w320/is.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ISR",
+        "type": "Country",
+        "name": "Israel",
+        "flag": "https://flagcdn.com/w320/il.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ITA",
+        "type": "Country",
+        "name": "Italy",
+        "flag": "https://flagcdn.com/w320/it.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "JAM",
+        "type": "Country",
+        "name": "Jamaica",
+        "flag": "https://flagcdn.com/w320/jm.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "JEY",
+        "type": "Country",
+        "name": "Jersey",
+        "flag": "https://flagcdn.com/w320/je.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "JOR",
+        "type": "Country",
+        "name": "Jordan",
+        "flag": "https://flagcdn.com/w320/jo.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "JPN",
+        "type": "Country",
+        "name": "Japan",
+        "flag": "https://flagcdn.com/w320/jp.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "KAZ",
+        "type": "Country",
+        "name": "Kazakhstan",
+        "flag": "https://flagcdn.com/w320/kz.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "KEN",
+        "type": "Country",
+        "name": "Kenya",
+        "flag": "https://flagcdn.com/w320/ke.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "KGZ",
+        "type": "Country",
+        "name": "Kyrgyzstan",
+        "flag": "https://flagcdn.com/w320/kg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "KHM",
+        "type": "Country",
+        "name": "Cambodia",
+        "flag": "https://flagcdn.com/w320/kh.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "KIR",
+        "type": "Country",
+        "name": "Kiribati",
+        "flag": "https://flagcdn.com/w320/ki.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "KNA",
+        "type": "Country",
+        "name": "Saint Kitts and Nevis",
+        "flag": "https://flagcdn.com/w320/kn.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "KOR",
+        "type": "Country",
+        "name": "South Korea",
+        "flag": "https://flagcdn.com/w320/kr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "KWT",
+        "type": "Country",
+        "name": "Kuwait",
+        "flag": "https://flagcdn.com/w320/kw.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LAO",
+        "type": "Country",
+        "name": "Laos",
+        "flag": "https://flagcdn.com/w320/la.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LBN",
+        "type": "Country",
+        "name": "Lebanon",
+        "flag": "https://flagcdn.com/w320/lb.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "LBR",
+        "type": "Country",
+        "name": "Liberia",
+        "flag": "https://flagcdn.com/w320/lr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LBY",
+        "type": "Country",
+        "name": "Libya",
+        "flag": "https://flagcdn.com/w320/ly.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "LCA",
+        "type": "Country",
+        "name": "Saint Lucia",
+        "flag": "https://flagcdn.com/w320/lc.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "LIE",
+        "type": "Country",
+        "name": "Liechtenstein",
+        "flag": "https://flagcdn.com/w320/li.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LKA",
+        "type": "Country",
+        "name": "Sri Lanka",
+        "flag": "https://flagcdn.com/w320/lk.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LSO",
+        "type": "Country",
+        "name": "Lesotho",
+        "flag": "https://flagcdn.com/w320/ls.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LTU",
+        "type": "Country",
+        "name": "Lithuania",
+        "flag": "https://flagcdn.com/w320/lt.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LTV",
+        "type": "Region",
+        "name": "Long Term Global",
+        "flag": "",
+        "included": "AFG, ALB, DZA, AND, ARM, AUT, BEL, BGR, HRV, CYP, CZE, DNK, EGY, EST, FRO, FIN, FRA, GEO, DEU, GHA, GIB, GRC, HUN, ISL, IRQ, IRL, IMN, ITA, JOR, KAZ, KEN, KWT, KGZ, LVA, LSO, LIE, LTU, LUX, MLT, MCO, MNE, MAR, MOZ, NLD, NGA, NOR, POL, PRT, ROU, SRB, SVK, SVN, ZAF, ESP, SWE, CHE, TUN, TUR, GBR",
+        "active": "Active"
+    },
+    {
+        "id": "LUX",
+        "type": "Country",
+        "name": "Luxembourg",
+        "flag": "https://flagcdn.com/w320/lu.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "LVA",
+        "type": "Country",
+        "name": "Latvia",
+        "flag": "https://flagcdn.com/w320/lv.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MAC",
+        "type": "Country",
+        "name": "Macau",
+        "flag": "https://flagcdn.com/w320/mo.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MAF",
+        "type": "Country",
+        "name": "Saint Martin",
+        "flag": "https://flagcdn.com/w320/mf.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MAR",
+        "type": "Country",
+        "name": "Morocco",
+        "flag": "https://flagcdn.com/w320/ma.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MCO",
+        "type": "Country",
+        "name": "Monaco",
+        "flag": "https://flagcdn.com/w320/mc.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MDA",
+        "type": "Country",
+        "name": "Moldova",
+        "flag": "https://flagcdn.com/w320/md.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MDE",
+        "type": "Region",
+        "name": "Middle East",
+        "flag": "https://api.voyx.in/VOYX/regionalFlags/MDE.png",
+        "included": "ARE, EGY, JOR, KWT, MAR, OMN, TUR",
+        "active": "Inactive"
+    },
+    {
+        "id": "MDG",
+        "type": "Country",
+        "name": "Madagascar",
+        "flag": "https://flagcdn.com/w320/mg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MDV",
+        "type": "Country",
+        "name": "Maldives",
+        "flag": "https://flagcdn.com/w320/mv.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MEX",
+        "type": "Country",
+        "name": "Mexico",
+        "flag": "https://flagcdn.com/w320/mx.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MHL",
+        "type": "Country",
+        "name": "Marshall Islands",
+        "flag": "https://flagcdn.com/w320/mh.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "MKD",
+        "type": "Country",
+        "name": "Macedonia",
+        "flag": "https://flagcdn.com/w320/mk.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MLI",
+        "type": "Country",
+        "name": "Mali",
+        "flag": "https://flagcdn.com/w320/ml.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MLT",
+        "type": "Country",
+        "name": "Malta",
+        "flag": "https://flagcdn.com/w320/mt.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MMR",
+        "type": "Country",
+        "name": "Myanmar",
+        "flag": "https://flagcdn.com/w320/mm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "MNE",
+        "type": "Country",
+        "name": "Montenegro",
+        "flag": "https://flagcdn.com/w320/me.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MNG",
+        "type": "Country",
+        "name": "Mongolia",
+        "flag": "https://flagcdn.com/w320/mn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MNP",
+        "type": "Country",
+        "name": "Northern Mariana Islands",
+        "flag": "https://flagcdn.com/w320/mp.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "MOZ",
+        "type": "Country",
+        "name": "Mozambique",
+        "flag": "https://flagcdn.com/w320/mz.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MRT",
+        "type": "Country",
+        "name": "Mauritania",
+        "flag": "https://flagcdn.com/w320/mr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MSR",
+        "type": "Country",
+        "name": "Montserrat",
+        "flag": "https://flagcdn.com/w320/ms.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "MTQ",
+        "type": "Country",
+        "name": "Martinique",
+        "flag": "https://flagcdn.com/w320/mq.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MUS",
+        "type": "Country",
+        "name": "Mauritius",
+        "flag": "https://flagcdn.com/w320/mu.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MWI",
+        "type": "Country",
+        "name": "Malawi",
+        "flag": "https://flagcdn.com/w320/mw.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "MYS",
+        "type": "Country",
+        "name": "Malaysia",
+        "flag": "https://flagcdn.com/w320/my.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "MYT",
+        "type": "Country",
+        "name": "Mayotte",
+        "flag": "https://flagcdn.com/w320/yt.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NAM",
+        "type": "Country",
+        "name": "Namibia",
+        "flag": "https://flagcdn.com/w320/na.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "NAMR",
+        "type": "Region",
+        "name": "North America",
+        "flag": "",
+        "included": "USA,CAN,MEX,PAN,CRI,SLV",
+        "active": "Inactive"
+    },
+    {
+        "id": "NCL",
+        "type": "Country",
+        "name": "New Caledonia",
+        "flag": "https://flagcdn.com/w320/nc.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NER",
+        "type": "Country",
+        "name": "Niger",
+        "flag": "https://flagcdn.com/w320/ne.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NFK",
+        "type": "Country",
+        "name": "Norfolk Island",
+        "flag": "https://flagcdn.com/w320/nf.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "NGA",
+        "type": "Country",
+        "name": "Nigeria",
+        "flag": "https://flagcdn.com/w320/ng.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NIC",
+        "type": "Country",
+        "name": "Nicaragua",
+        "flag": "https://flagcdn.com/w320/ni.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NIU",
+        "type": "Country",
+        "name": "Niue",
+        "flag": "https://flagcdn.com/w320/nu.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "NLD",
+        "type": "Country",
+        "name": "Netherlands",
+        "flag": "https://flagcdn.com/w320/nl.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NOR",
+        "type": "Country",
+        "name": "Norway",
+        "flag": "https://flagcdn.com/w320/no.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NPL",
+        "type": "Country",
+        "name": "Nepal",
+        "flag": "https://flagcdn.com/w320/np.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "NRU",
+        "type": "Country",
+        "name": "Nauru",
+        "flag": "https://flagcdn.com/w320/nr.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "NZL",
+        "type": "Country",
+        "name": "New Zealand",
+        "flag": "https://flagcdn.com/w320/nz.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "OCEN",
+        "type": "Region",
+        "name": "Oceania",
+        "flag": "https://flagcdn.com/w320/nz.png",
+        "included": "AUS,NZL",
+        "active": "Active"
+    },
+    {
+        "id": "OMN",
+        "type": "Country",
+        "name": "Oman",
+        "flag": "https://flagcdn.com/w320/om.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PAK",
+        "type": "Country",
+        "name": "Pakistan",
+        "flag": "https://flagcdn.com/w320/pk.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PAN",
+        "type": "Country",
+        "name": "Panama",
+        "flag": "https://flagcdn.com/w320/pa.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PCN",
+        "type": "Country",
+        "name": "Pitcairn Islands",
+        "flag": "https://flagcdn.com/w320/pn.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "PER",
+        "type": "Country",
+        "name": "Peru",
+        "flag": "https://flagcdn.com/w320/pe.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PHL",
+        "type": "Country",
+        "name": "Philippines",
+        "flag": "https://flagcdn.com/w320/ph.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PLW",
+        "type": "Country",
+        "name": "Palau",
+        "flag": "https://flagcdn.com/w320/pw.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "PNG",
+        "type": "Country",
+        "name": "Papua New Guinea",
+        "flag": "https://flagcdn.com/w320/pg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "POL",
+        "type": "Country",
+        "name": "Poland",
+        "flag": "https://flagcdn.com/w320/pl.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PRI",
+        "type": "Country",
+        "name": "Puerto Rico",
+        "flag": "https://flagcdn.com/w320/pr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PRK",
+        "type": "Country",
+        "name": "North Korea",
+        "flag": "https://flagcdn.com/w320/kp.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "PRT",
+        "type": "Country",
+        "name": "Portugal",
+        "flag": "https://flagcdn.com/w320/pt.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PRY",
+        "type": "Country",
+        "name": "Paraguay",
+        "flag": "https://flagcdn.com/w320/py.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PSE",
+        "type": "Country",
+        "name": "Palestine",
+        "flag": "https://flagcdn.com/w320/ps.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "PYF",
+        "type": "Country",
+        "name": "French Polynesia",
+        "flag": "https://flagcdn.com/w320/pf.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "QAT",
+        "type": "Country",
+        "name": "Qatar",
+        "flag": "https://flagcdn.com/w320/qa.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "REU",
+        "type": "Country",
+        "name": "Reunion",
+        "flag": "https://flagcdn.com/w320/re.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ROU",
+        "type": "Country",
+        "name": "Romania",
+        "flag": "https://flagcdn.com/w320/ro.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "RUS",
+        "type": "Country",
+        "name": "Russia",
+        "flag": "https://flagcdn.com/w320/ru.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "RWA",
+        "type": "Country",
+        "name": "Rwanda",
+        "flag": "https://flagcdn.com/w320/rw.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SAMR",
+        "type": "Region",
+        "name": "South America",
+        "flag": "",
+        "included": "ARG,BRA,CHL,ECU,PER,URY",
+        "active": "Active"
+    },
+    {
+        "id": "SAU",
+        "type": "Country",
+        "name": "Saudi Arabia",
+        "flag": "https://flagcdn.com/w320/sa.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SDN",
+        "type": "Country",
+        "name": "Sudan",
+        "flag": "https://flagcdn.com/w320/sd.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SEN",
+        "type": "Country",
+        "name": "Senegal",
+        "flag": "https://flagcdn.com/w320/sn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SGP",
+        "type": "Country",
+        "name": "Singapore",
+        "flag": "https://flagcdn.com/w320/sg.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SGS",
+        "type": "Country",
+        "name": "South Georgia and the South Sandwich Islands",
+        "flag": "https://flagcdn.com/w320/gs.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SHN",
+        "type": "Country",
+        "name": "Saint Helena",
+        "flag": "https://flagcdn.com/w320/sh.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SJM",
+        "type": "Country",
+        "name": "Svalbard and Jan Mayen",
+        "flag": "https://flagcdn.com/w320/sj.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SLB",
+        "type": "Country",
+        "name": "Solomon Islands",
+        "flag": "https://flagcdn.com/w320/sb.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SLE",
+        "type": "Country",
+        "name": "Sierra Leone",
+        "flag": "https://flagcdn.com/w320/sl.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SLV",
+        "type": "Country",
+        "name": "El Salvador",
+        "flag": "https://flagcdn.com/w320/sv.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SMIT",
+        "type": "Region",
+        "name": "Mainland Southeast Asia",
+        "flag": "",
+        "included": "SGP,IDN,THA,MYS",
+        "active": "Active"
+    },
+    {
+        "id": "SMR",
+        "type": "Country",
+        "name": "San Marino",
+        "flag": "https://flagcdn.com/w320/sm.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SOM",
+        "type": "Country",
+        "name": "Somalia",
+        "flag": "https://flagcdn.com/w320/so.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SPM",
+        "type": "Country",
+        "name": "Saint Pierre and Miquelon",
+        "flag": "https://flagcdn.com/w320/pm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SRB",
+        "type": "Country",
+        "name": "Serbia",
+        "flag": "https://flagcdn.com/w320/rs.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SSD",
+        "type": "Country",
+        "name": "South Sudan",
+        "flag": "https://flagcdn.com/w320/ss.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "STP",
+        "type": "Country",
+        "name": "Sao Tome and Principe",
+        "flag": "https://flagcdn.com/w320/st.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SUR",
+        "type": "Country",
+        "name": "Suriname",
+        "flag": "https://flagcdn.com/w320/sr.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SVK",
+        "type": "Country",
+        "name": "Slovakia",
+        "flag": "https://flagcdn.com/w320/sk.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SVN",
+        "type": "Country",
+        "name": "Slovenia",
+        "flag": "https://flagcdn.com/w320/si.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SWE",
+        "type": "Country",
+        "name": "Sweden",
+        "flag": "https://flagcdn.com/w320/se.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SWZ",
+        "type": "Country",
+        "name": "Swaziland",
+        "flag": "https://flagcdn.com/w320/sz.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SXM",
+        "type": "Country",
+        "name": "Sint Maarten",
+        "flag": "https://flagcdn.com/w320/sx.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "SYC",
+        "type": "Country",
+        "name": "Seychelles",
+        "flag": "https://flagcdn.com/w320/sc.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "SYR",
+        "type": "Country",
+        "name": "Syrian Arab Republic",
+        "flag": "https://flagcdn.com/w320/sy.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TCA",
+        "type": "Country",
+        "name": "Turks and Caicos Islands",
+        "flag": "https://flagcdn.com/w320/tc.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TCD",
+        "type": "Country",
+        "name": "Chad",
+        "flag": "https://flagcdn.com/w320/td.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "TGO",
+        "type": "Country",
+        "name": "Togo",
+        "flag": "https://flagcdn.com/w320/tg.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "THA",
+        "type": "Country",
+        "name": "Thailand",
+        "flag": "https://flagcdn.com/w320/th.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "TJK",
+        "type": "Country",
+        "name": "Tajikistan",
+        "flag": "https://flagcdn.com/w320/tj.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TKL",
+        "type": "Country",
+        "name": "Tokelau",
+        "flag": "https://flagcdn.com/w320/tk.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TKM",
+        "type": "Country",
+        "name": "Turkmenistan",
+        "flag": "https://flagcdn.com/w320/tm.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TLS",
+        "type": "Country",
+        "name": "Timor-Leste",
+        "flag": "https://flagcdn.com/w320/tl.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TON",
+        "type": "Country",
+        "name": "Tonga",
+        "flag": "https://flagcdn.com/w320/to.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "TTO",
+        "type": "Country",
+        "name": "Trinidad and Tobago",
+        "flag": "https://flagcdn.com/w320/tt.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TUN",
+        "type": "Country",
+        "name": "Tunisia",
+        "flag": "https://flagcdn.com/w320/tn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "TUR",
+        "type": "Country",
+        "name": "Turkey",
+        "flag": "https://flagcdn.com/w320/tr.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "TUV",
+        "type": "Country",
+        "name": "Tuvalu",
+        "flag": "https://flagcdn.com/w320/tv.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "TWN",
+        "type": "Country",
+        "name": "Taiwan",
+        "flag": "https://flagcdn.com/w320/tw.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "TZA",
+        "type": "Country",
+        "name": "Tanzania",
+        "flag": "https://flagcdn.com/w320/tz.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "UGA",
+        "type": "Country",
+        "name": "Uganda",
+        "flag": "https://flagcdn.com/w320/ug.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "UKR",
+        "type": "Country",
+        "name": "Ukraine",
+        "flag": "https://flagcdn.com/w320/ua.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "UMI",
+        "type": "Country",
+        "name": "United States Minor Outlying Islands",
+        "flag": "https://flagcdn.com/w320/um.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "URY",
+        "type": "Country",
+        "name": "Uruguay",
+        "flag": "https://flagcdn.com/w320/uy.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "USA",
+        "type": "Country",
+        "name": "United States of America",
+        "flag": "https://flagcdn.com/w320/us.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "USCM",
+        "type": "Region",
+        "name": "USMCA Countries",
+        "flag": "",
+        "included": "USA,CAN,MEX",
+        "active": "Active"
+    },
+    {
+        "id": "UZB",
+        "type": "Country",
+        "name": "Uzbekistan",
+        "flag": "https://flagcdn.com/w320/uz.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "VCT",
+        "type": "Country",
+        "name": "Saint Vincent and the Grenadines",
+        "flag": "https://flagcdn.com/w320/vc.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "VEN",
+        "type": "Country",
+        "name": "Venezuela",
+        "flag": "https://flagcdn.com/w320/ve.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "VGB",
+        "type": "Country",
+        "name": "British Virgin Islands",
+        "flag": "https://flagcdn.com/w320/vg.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "VIR",
+        "type": "Country",
+        "name": "U.S. Virgin Islands",
+        "flag": "https://flagcdn.com/w320/vi.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "VNM",
+        "type": "Country",
+        "name": "Vietnam",
+        "flag": "https://flagcdn.com/w320/vn.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "VUT",
+        "type": "Country",
+        "name": "Vanuatu",
+        "flag": "https://flagcdn.com/w320/vu.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "WLD",
+        "type": "Global",
+        "name": "World",
+        "flag": "",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "WLF",
+        "type": "Country",
+        "name": "Wallis and Futuna",
+        "flag": "https://flagcdn.com/w320/wf.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "WSM",
+        "type": "Country",
+        "name": "Samoa",
+        "flag": "https://flagcdn.com/w320/ws.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "XKX",
+        "type": "Country",
+        "name": "Kosovo",
+        "flag": "https://flagcdn.com/w320/xk.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "YEM",
+        "type": "Country",
+        "name": "Yemen",
+        "flag": "https://flagcdn.com/w320/ye.png",
+        "included": "",
+        "active": "Inactive"
+    },
+    {
+        "id": "ZAF",
+        "type": "Country",
+        "name": "South Africa",
+        "flag": "https://flagcdn.com/w320/za.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ZMB",
+        "type": "Country",
+        "name": "Zambia",
+        "flag": "https://flagcdn.com/w320/zm.png",
+        "included": "",
+        "active": "Active"
+    },
+    {
+        "id": "ZWE",
+        "type": "Country",
+        "name": "Zimbabwe",
+        "flag": "https://flagcdn.com/w320/zw.png",
+        "included": "",
+        "active": "Inactive"
+    }
+]

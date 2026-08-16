@@ -130,3 +130,21 @@ function renderProductsTable() {
         </tr>
     `).join('');
 }
+
+function renderDestinationsTable() {
+    const tbody = document.getElementById('destinations-page-tbody');
+    const { destinations } = window.store;
+    if (!tbody || !destinations) return;
+    
+    tbody.innerHTML = destinations.map(d => {
+        let flagImg = d.flag ? `<img src="${d.flag}" alt="${d.name}" style="width: 24px; height: 16px; object-fit: cover; border-radius: 2px; margin-right: 8px; vertical-align: middle;">` : '';
+        return `
+        <tr>
+            <td><strong>${d.id}</strong></td>
+            <td>${d.type}</td>
+            <td>${flagImg}<strong>${d.name}</strong></td>
+            <td><div style="max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${d.included}">${d.included}</div></td>
+            <td><span class="status-pill ${d.active === 'Active' ? 'completed' : 'cancelled'}">${d.active}</span></td>
+        </tr>
+    `}).join('');
+}

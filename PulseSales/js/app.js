@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (typeof renderFullOrdersTable === 'function') renderFullOrdersTable();
             if (typeof renderCustomersTable === 'function') renderCustomersTable();
             if (typeof renderProductsTable === 'function') renderProductsTable();
+            if (typeof renderDestinationsTable === 'function') renderDestinationsTable();
             
             // Re-render icons if dynamically injected
             if (typeof lucide !== 'undefined') lucide.createIcons();
