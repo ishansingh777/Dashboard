@@ -1,7 +1,3218 @@
 [
-    { "id": "PRD-001", "name": "Enterprise Cloud API", "category": "API", "price": 1250.00, "stock": "Unlimited", "status": "Active" },
-    { "id": "PRD-002", "name": "Pro Data Pipeline", "category": "Data", "price": 499.00, "stock": "Unlimited", "status": "Active" },
-    { "id": "PRD-003", "name": "Standard Analytics", "category": "Analytics", "price": 199.00, "stock": "Unlimited", "status": "Active" },
-    { "id": "PRD-004", "name": "Developer Seat", "category": "License", "price": 49.00, "stock": "Unlimited", "status": "Active" },
-    { "id": "PRD-005", "name": "Legacy Dashboard", "category": "Analytics", "price": 99.00, "stock": "Deprecated", "status": "Inactive" }
+    {
+        "id": "1001",
+        "name": "eSIM - Singapore, Malaysia - 1 GB/Day For 5 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1002",
+        "name": "Plastic SIM - HongKong, Macau - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1003",
+        "name": "eSIM - HongKong, Macau - 1 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1004",
+        "name": "eSIM - Japan - 1 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1005",
+        "name": "Plastic SIM - Singapore, Malaysia - 0.5 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1006",
+        "name": "eSIM - Singapore, Malaysia - 1 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1007",
+        "name": "Plastic SIM - Turkey - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1008",
+        "name": "eSIM - Vietnam - 5 GB/Day For 20 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1009",
+        "name": "HongKong, Macau 2GB/Day -5 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1010",
+        "name": "eSIM - Japan - 2 GB/Day For 5 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1011",
+        "name": "eSIM - Singapore, Malaysia - 2 GB/Day For 5 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1012",
+        "name": "Plastic SIM - Europe[8] - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1013",
+        "name": "Plastic SIM - Europe[+] - 0.5 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1014",
+        "name": "eSIM - Singapore, Malaysia, Indonesia, Thailand - 1 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1015",
+        "name": "SMIT 2GB/Day -5 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1016",
+        "name": "Plastic SIM - HongKong, Macau - 2 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1017",
+        "name": "eSIM - HongKong, Macau - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1018",
+        "name": "eSIM - Europe (8) - 1 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1019",
+        "name": "eSIM - Japan - 1 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1020",
+        "name": "eSIM - Singapore, Malaysia - 1 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1021",
+        "name": "Plastic SIM - Singapore, Malaysia, Thailand, Indonesia - 1 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1022",
+        "name": "eSIM - South Korea - 1 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1023",
+        "name": "Plastic SIM - Vietnamobile - 5 GB/Day For 20 Days",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1024",
+        "name": "Australia - Unlimited Data for 5 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1025",
+        "name": "eSIM - Bangladesh - 2 GB/Day For 5 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1026",
+        "name": "Switzerland - Unlimited Data for 5 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1027",
+        "name": "eSIM - Japan - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1028",
+        "name": "eSIM - Singapore, Malaysia - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1029",
+        "name": "HongKong, Macau 2GB/Day -10 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1030",
+        "name": "eSIM - Singapore, Malaysia, Indonesia, Thailand - 1 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1031",
+        "name": "eSIM - United States of America - 1 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1032",
+        "name": "Plastic SIM - Vietnam - 5 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1033",
+        "name": "Plastic SIM - UAE - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1034",
+        "name": "eSIM - United Arab Emirates - 1 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1035",
+        "name": "eSIM - Europe (8) - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1036",
+        "name": "Plastic SIM - HongKong, Macau - 3 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1037",
+        "name": "eSIM - Sri Lanka - 1 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1038",
+        "name": "eSIM - Singapore, Malaysia, Indonesia, Thailand - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1039",
+        "name": "eSIM - China, HongKong, Macau - 2 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1040",
+        "name": "Plastic SIM - Australia, New Zealand - 1 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1041",
+        "name": "Plastic SIM - Singapore, Malaysia - 2 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1042",
+        "name": "eSIM - Europe (8) - 1 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1043",
+        "name": "eSIM - Japan - 1 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1044",
+        "name": "Plastic SIM - Singapore, Malaysia - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1045",
+        "name": "eSIM - United States of America - 1 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1046",
+        "name": "Europe - Unlimited Data for 5 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1047",
+        "name": "United Kingdom - Unlimited Data for 7 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1048",
+        "name": "eSIM - Europe (34) - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1049",
+        "name": "eSIM - Japan - 2 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1050",
+        "name": "eSIM - Singapore, Malaysia - 2 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1051",
+        "name": "eSIM - Europe (31) - 1 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1052",
+        "name": "eSIM - Singapore, Malaysia, Indonesia, Thailand - 1 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1053",
+        "name": "Plastic SIM - Africa[6] - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1054",
+        "name": "Australia - Unlimited Data for 7 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1055",
+        "name": "Germany - Unlimited Data for 7 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1056",
+        "name": "Europe - Unlimited Data for 7 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1057",
+        "name": "Plastic SIM - Japan - 2 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1058",
+        "name": "Plastic SIM - Japan - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1059",
+        "name": "eSIM - Japan - 1 GB/Day For 20 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1060",
+        "name": "eSIM - United Arab Emirates - 1 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1061",
+        "name": "eSIM - Sri Lanka - 1 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1062",
+        "name": "eSIM - Australia, New Zealand - 2 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1063",
+        "name": "Plastic SIM - Singapore, Malaysia - 3 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1064",
+        "name": "eSIM - Singapore, Malaysia, Indonesia, Thailand - 2 GB/Day For 10 Days",
+        "category": "eSIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1065",
+        "name": "Plastic SIM - Europe[+] - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1066",
+        "name": "eSIM - United States of America - 1 GB/Day For 20 Days",
+        "category": "eSIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1067",
+        "name": "eSIM - Sri Lanka - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1068",
+        "name": "United Kingdom - Unlimited Data for 10 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1069",
+        "name": "Plastic SIM - Oman - 1 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1070",
+        "name": "SMIT 2GB/Day -15 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1071",
+        "name": "eSIM - Europe (31) - 1 GB/Day For 20 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1072",
+        "name": "eSIM - Europe (8) - 2 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1524.58,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1073",
+        "name": "eSIM - Japan - 2 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1524.58,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1074",
+        "name": "United Arab Emirates - Unlimited Data for 5 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1075",
+        "name": "eSIM - Global (61) - 2 GB/Day For 7 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1076",
+        "name": "Europe - Unlimited Data for 10 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1077",
+        "name": "eSIM - Europe (31) - 2 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1078",
+        "name": "eSIM - Japan - 2 GB/Day For 20 Days",
+        "category": "eSIM",
+        "price": 1863.56,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1079",
+        "name": "eSIM - Europe (31) - 1 GB/Day For 30 Days",
+        "category": "eSIM",
+        "price": 1863.56,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1080",
+        "name": "Plastic SIM - UAE - 2 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 1948.31,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1081",
+        "name": "Plastic SIM - Europe[8] - 3 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1948.31,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1082",
+        "name": "eSIM - Europe (31) - 3 GB/Day For 15 Days",
+        "category": "eSIM",
+        "price": 2033.05,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1083",
+        "name": "eSIM - Europe (31) - 2 GB/Day For 20 Days",
+        "category": "eSIM",
+        "price": 2033.05,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1084",
+        "name": "Singapore - Unlimited Data for 5 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1085",
+        "name": "United Arab Emirates - Unlimited Data for 7 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1086",
+        "name": "United Kingdom - Unlimited Data for 15 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1087",
+        "name": "Plastic SIM - USA, Canada, Mexico - 1 GB/Day For 7 Days",
+        "category": "Plastic SIM",
+        "price": 2202.54,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1088",
+        "name": "Europe - Unlimited Data for 15 Days",
+        "category": "eSIM",
+        "price": 2287.29,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1089",
+        "name": "Plastic SIM - Europe[8] - 2 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 2372.03,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1090",
+        "name": "Plastic SIM - Saudi Arabia - 0.5 GB/Day For 1 Days",
+        "category": "Plastic SIM",
+        "price": 2456.78,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1091",
+        "name": "Germany - Unlimited Data for 15 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1092",
+        "name": "eSIM - United States of America - 2 GB/Day For 30 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1093",
+        "name": "Sri Lanka - Unlimited Data for 7 Days",
+        "category": "eSIM",
+        "price": 2795.76,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1094",
+        "name": "eSIM - United Arab Emirates - 1 GB/Day For 30 Days",
+        "category": "eSIM",
+        "price": 2795.76,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1095",
+        "name": "SMIT 2GB/Day -30 Days",
+        "category": "eSIM",
+        "price": 2880.51,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1096",
+        "name": "eSIM - Saudi Arabia - 1 GB/Day For 30 Days",
+        "category": "eSIM",
+        "price": 2880.51,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1097",
+        "name": "United Arab Emirates - Unlimited Data for 10 Days",
+        "category": "eSIM",
+        "price": 2965.25,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1098",
+        "name": "Saudi Arabia - Unlimited Data for 15 Days",
+        "category": "eSIM",
+        "price": 2965.25,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1099",
+        "name": "Thailand - Unlimited Data for 10 Days",
+        "category": "eSIM",
+        "price": 3388.98,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1100",
+        "name": "Europe - Unlimited Data for 30 Days",
+        "category": "eSIM",
+        "price": 4236.44,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1101",
+        "name": "Australia - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1102",
+        "name": "Austria - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1103",
+        "name": "Switzerland - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1104",
+        "name": "Czech Republic - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1105",
+        "name": "Germany - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1106",
+        "name": "Spain - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1107",
+        "name": "Europe - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1108",
+        "name": "Finland - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1109",
+        "name": "France - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1110",
+        "name": "United Kingdom - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1111",
+        "name": "Greece - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1112",
+        "name": "Hong Kong - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1113",
+        "name": "Indonesia - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1114",
+        "name": "Italy - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1115",
+        "name": "Kuwait - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1116",
+        "name": "Sri Lanka - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1117",
+        "name": "Netherlands - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1118",
+        "name": "Norway - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1119",
+        "name": "New Zealand - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1120",
+        "name": "Qatar - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1121",
+        "name": "Thailand - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1122",
+        "name": "Turkey - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1123",
+        "name": "United States of America - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1124",
+        "name": "Vietnam - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1125",
+        "name": "America - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1126",
+        "name": "United Arab Emirates - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1127",
+        "name": "Bangladesh - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1128",
+        "name": "Bahrain - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1129",
+        "name": "Egypt - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1130",
+        "name": "Europe - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1131",
+        "name": "Japan - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1132",
+        "name": "Malaysia - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1133",
+        "name": "Oman - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1134",
+        "name": "Saudi Arabia - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1135",
+        "name": "Singapore - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1136",
+        "name": "Azerbaijan - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1137",
+        "name": "China - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1138",
+        "name": "Ghana - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1139",
+        "name": "Kazakhstan - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1140",
+        "name": "Kenya - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1141",
+        "name": "South Korea - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1142",
+        "name": "Taiwan - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1143",
+        "name": "Uzbekistan - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1144",
+        "name": "South Africa - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1145",
+        "name": "Asia - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1146",
+        "name": "Georgia - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1147",
+        "name": "Mauritius - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1148",
+        "name": "Seychelles - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1149",
+        "name": "Global - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1150",
+        "name": "Cambodia - 1 GB for 7 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1151",
+        "name": "Plastic SIM - 3GB for 5 Days [HKG, MAC]",
+        "category": "Plastic SIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1152",
+        "name": "United States of America - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 253.39,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1153",
+        "name": "Plastic SIM - 3GB for 15 Days [HKG, MAC]",
+        "category": "Plastic SIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1154",
+        "name": "Germany - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1155",
+        "name": "Greece - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1156",
+        "name": "Netherlands - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1157",
+        "name": "Turkey - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 338.14,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1158",
+        "name": "Plastic SIM - 3GB for 5 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1159",
+        "name": "Australia - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1160",
+        "name": "Switzerland - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1161",
+        "name": "Finland - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1162",
+        "name": "United Kingdom - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1163",
+        "name": "Hong Kong - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1164",
+        "name": "Indonesia - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1165",
+        "name": "Plastic SIM - 3GB for 30 Days [SGP, MYS, IDN, THA]",
+        "category": "Plastic SIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1166",
+        "name": "Kuwait - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1167",
+        "name": "Sri Lanka - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1168",
+        "name": "Malaysia - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1169",
+        "name": "Singapore - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1170",
+        "name": "Thailand - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1171",
+        "name": "Plastic SIM - 3GB for  Days [USA]",
+        "category": "Plastic SIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1172",
+        "name": "Plastic SIM - 3GB for 30 Days [LKA]",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1173",
+        "name": "Plastic SIM - 3GB for 5 Days [OMN]",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1174",
+        "name": "Plastic SIM - 3GB for 15 Days [SAU]",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1175",
+        "name": "Plastic SIM - 3GB for 7 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1176",
+        "name": "Plastic SIM - 3GB for 30 Days [LKA]",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1177",
+        "name": "Japan - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1178",
+        "name": "Oman - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1179",
+        "name": "Plastic SIM - 3GB for 5 Days [MULTI (63)]",
+        "category": "Plastic SIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1180",
+        "name": "Plastic SIM - 3GB for 7 Days [OMN]",
+        "category": "Plastic SIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1181",
+        "name": "Plastic SIM - 3GB for 30 Days [SAU]",
+        "category": "Plastic SIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1182",
+        "name": "Plastic SIM - 3GB for 30 Days [SAU]",
+        "category": "Plastic SIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1183",
+        "name": "United Arab Emirates - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1184",
+        "name": "Bahrain - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1185",
+        "name": "Canada - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1186",
+        "name": "Europe - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1187",
+        "name": "Macau - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1188",
+        "name": "Qatar - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1189",
+        "name": "Taiwan - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1190",
+        "name": "Vietnam - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1191",
+        "name": "Plastic SIM - 3GB for 30 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1192",
+        "name": "Plastic SIM - 3GB for 30 Days [OMN]",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1193",
+        "name": "Plastic SIM - 3GB for 15 Days [SAU]",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1194",
+        "name": "America - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1195",
+        "name": "China - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1196",
+        "name": "Saudi Arabia - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1197",
+        "name": "Kenya - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1198",
+        "name": "South Korea - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1199",
+        "name": "South Africa - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1200",
+        "name": "Brazil - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1201",
+        "name": "Mauritius - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1202",
+        "name": "Global - 3 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1203",
+        "name": "Plastic SIM - 5GB for 7 Days [HKG, MAC]",
+        "category": "Plastic SIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1204",
+        "name": "Turkey - 5 GB for 7 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1205",
+        "name": "Plastic SIM - 5GB for  Days [USA]",
+        "category": "Plastic SIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1206",
+        "name": "Turkey - 5 GB for 15 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1207",
+        "name": "Germany - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1208",
+        "name": "Spain - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1209",
+        "name": "France - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1210",
+        "name": "Greece - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1211",
+        "name": "Italy - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1212",
+        "name": "Netherlands - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1213",
+        "name": "Turkey - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1214",
+        "name": "United States of America - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 422.88,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1215",
+        "name": "Plastic SIM - Singapore, Malaysia - 5 GB For 7 Days",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1216",
+        "name": "eSIM - Turkey - 5 GB For 7 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1217",
+        "name": "eSIM - United Kingdom - 5 GB For 10 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1218",
+        "name": "Singapore, Malaysia 5GB -10 Days",
+        "category": "eSIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1219",
+        "name": "Plastic SIM - 5GB for 30 Days [SGP, MYS, IDN, THA]",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1220",
+        "name": "Plastic SIM - 5GB for  Days [USA]",
+        "category": "Plastic SIM",
+        "price": 507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1221",
+        "name": "SMIT 5GB -5 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1222",
+        "name": "Switzerland - 5 GB for 7 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1223",
+        "name": "Thailand - 5 GB for 7 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1224",
+        "name": "Malaysia - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1225",
+        "name": "Singapore - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1226",
+        "name": "Switzerland - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1227",
+        "name": "United Kingdom - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1228",
+        "name": "Malaysia - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1229",
+        "name": "Plastic SIM - 5GB for 5 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1230",
+        "name": "eSIM - China, HongKong, Macau - 5 GB For 7 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1231",
+        "name": "Indonesia - 5 GB for 7 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1232",
+        "name": "Plastic SIM - 5GB for 30 Days [LKA]",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1233",
+        "name": "Oman - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1234",
+        "name": "Plastic SIM - 5GB for 15 Days [SAU]",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1235",
+        "name": "Plastic SIM - 5GB for 7 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1236",
+        "name": "eSIM - Sri Lanka - 5 GB For 7 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1237",
+        "name": "Plastic SIM - 5GB for  Days [LKA]",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1238",
+        "name": "Qatar - 5 GB for 7 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1239",
+        "name": "Europe - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1240",
+        "name": "Hong Kong - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1241",
+        "name": "Indonesia - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1242",
+        "name": "Sri Lanka - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1243",
+        "name": "Macau - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1244",
+        "name": "Qatar - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1245",
+        "name": "Thailand - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1246",
+        "name": "America - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1247",
+        "name": "Plastic SIM - 5GB for 30 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1248",
+        "name": "Europe - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1249",
+        "name": "Europe - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1250",
+        "name": "Hong Kong - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1251",
+        "name": "Japan - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1252",
+        "name": "Oman - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1253",
+        "name": "Thailand - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1254",
+        "name": "Vietnam - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1255",
+        "name": "Egypt - 5 GB for 7 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1256",
+        "name": "United Arab Emirates - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1257",
+        "name": "Sri Lanka - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1258",
+        "name": "Plastic SIM - 5GB for 30 Days [OMN]",
+        "category": "Plastic SIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1259",
+        "name": "Qatar - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1260",
+        "name": "Saudi Arabia - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1261",
+        "name": "eSIM - Africa (10) - 5 GB For 10 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1262",
+        "name": "Plastic SIM - 5GB for 15 Days [MULTI (63)]",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1263",
+        "name": "Egypt - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1264",
+        "name": "Plastic SIM - 5GB for 30 Days [MULTI (63)]",
+        "category": "Plastic SIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1265",
+        "name": "Plastic SIM - 5GB for  Days [CAN, USA, MEX]",
+        "category": "Plastic SIM",
+        "price": 1185.59,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1266",
+        "name": "China - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1267",
+        "name": "South Korea - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1268",
+        "name": "South Africa - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1269",
+        "name": "Azerbaijan - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1524.58,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1270",
+        "name": "Seychelles - 5 GB for 7 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1271",
+        "name": "Kenya - 5 GB for 10 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1272",
+        "name": "Georgia - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1273",
+        "name": "Guatemala - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1274",
+        "name": "Mauritius - 5 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1275",
+        "name": "Plastic SIM - Sri Lanka - 7.5 GB For 28 Days",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1276",
+        "name": "Plastic SIM - 10GB for  Days [USA]",
+        "category": "Plastic SIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1277",
+        "name": "Turkey - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 592.37,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1278",
+        "name": "eSIM - Turkey - 10 GB For 30 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1279",
+        "name": "eSIM - United States of America - 10 GB For 30 Days",
+        "category": "eSIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1280",
+        "name": "Plastic SIM - 10GB for  Days [USA]",
+        "category": "Plastic SIM",
+        "price": 677.12,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1281",
+        "name": "Plastic SIM - 10GB for 7 Days [HKG, MAC]",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1282",
+        "name": "eSIM - Singapore, Malaysia - 10 GB For 10 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1283",
+        "name": "eSIM - United Kingdom - 10 GB For 15 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1284",
+        "name": "Plastic SIM - South Korea - 10 GB For 15 Days",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1285",
+        "name": "eSIM - United Kingdom - 10 GB For 30 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1286",
+        "name": "Australia - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1287",
+        "name": "Switzerland - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1288",
+        "name": "Germany - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1289",
+        "name": "Spain - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1290",
+        "name": "United Kingdom - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1291",
+        "name": "Greece - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1292",
+        "name": "Italy - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1293",
+        "name": "Malaysia - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1294",
+        "name": "Plastic SIM - 10GB for 30 Days [SGP, MYS, IDN, THA]",
+        "category": "Plastic SIM",
+        "price": 846.61,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1295",
+        "name": "Switzerland - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1296",
+        "name": "Singapore - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1297",
+        "name": "eSIM - Europe (31) - 10 GB For 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1298",
+        "name": "Japan - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1299",
+        "name": "Singapore - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1300",
+        "name": "eSIM - Singapore, Malaysia, Indonesia, Thailand - 10 GB For 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1301",
+        "name": "Plastic SIM - 10GB for 5 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1302",
+        "name": "Plastic SIM - 10GB for 30 Days [LKA]",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1303",
+        "name": "eSIM - China, HongKong, Macau - 10 GB For 10 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1304",
+        "name": "Plastic SIM - Japan - 10 GB For 10 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1305",
+        "name": "Plastic SIM - Europe[8] - 10 GB For 15 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1306",
+        "name": "Oman - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1307",
+        "name": "Plastic SIM - 10GB for 7 Days [ARE]",
+        "category": "Plastic SIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1308",
+        "name": "Plastic SIM - Philippines - 10 GB For 7 Days",
+        "category": "Plastic SIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1309",
+        "name": "Europe - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1310",
+        "name": "Plastic SIM - Europe[+] - 10 GB For 15 Days",
+        "category": "Plastic SIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1311",
+        "name": "Hong Kong - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1312",
+        "name": "Qatar - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1313",
+        "name": "Thailand - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1314",
+        "name": "Europe - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1315",
+        "name": "Hong Kong - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1316",
+        "name": "Oman - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1317",
+        "name": "Thailand - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1318",
+        "name": "Plastic SIM - 10GB for  Days [LKA]",
+        "category": "Plastic SIM",
+        "price": 1185.59,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1319",
+        "name": "Indonesia - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1320",
+        "name": "Sri Lanka - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1321",
+        "name": "Plastic SIM - 10GB for  Days [LKA]",
+        "category": "Plastic SIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1322",
+        "name": "Philippines - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1323",
+        "name": "Senegal - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1324",
+        "name": "Europe - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1325",
+        "name": "Philippines - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1326",
+        "name": "Vietnam - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1327",
+        "name": "eSIM - Saudi Arabia - 10 GB For 15 Days",
+        "category": "eSIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1328",
+        "name": "eSIM - Azerbaijan - 10 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1329",
+        "name": "Indonesia - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1330",
+        "name": "Plastic SIM - 10GB for 30 Days [SAU]",
+        "category": "Plastic SIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1331",
+        "name": "eSIM - Saudi Arabia - 10 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1332",
+        "name": "Plastic SIM - UAE - 10 GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1609.32,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1333",
+        "name": "United Arab Emirates - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1334",
+        "name": "China - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1335",
+        "name": "Morocco - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1336",
+        "name": "Mexico - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1337",
+        "name": "Plastic SIM - Oman - 10 GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1863.56,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1338",
+        "name": "Azerbaijan - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1339",
+        "name": "Bangladesh - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1340",
+        "name": "Egypt - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1341",
+        "name": "Egypt - 10 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1342",
+        "name": "South Korea - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1343",
+        "name": "Malawi - 10 GB for 15 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1344",
+        "name": "Iraq - 10 GB for 365 Days",
+        "category": "eSIM",
+        "price": 5507.63,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1345",
+        "name": "eSIM - Europe (35) - 12 GB For 27 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1346",
+        "name": "Plastic SIM - Sri Lanka - 12.5 GB For 28 Days",
+        "category": "Plastic SIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1347",
+        "name": "eSIM - United States - 12 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1348",
+        "name": "Plastic SIM - United States [AT&T] - 12GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1355.08,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1349",
+        "name": "eSIM - United States - 12 GB For 60 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1350",
+        "name": "Plastic SIM - United States [AT&T] - 12GB For 60 Days",
+        "category": "Plastic SIM",
+        "price": 2202.54,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1351",
+        "name": "Turkey - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 931.36,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1352",
+        "name": "eSIM - Turkey - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1353",
+        "name": "eSIM - United States of America - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1354",
+        "name": "eSIM - Singapore, Malaysia - 20 GB For 7 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1355",
+        "name": "Germany - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1356",
+        "name": "Plastic SIM - 20GB for  Days [USA]",
+        "category": "Plastic SIM",
+        "price": 1185.59,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1357",
+        "name": "Plastic SIM - 20GB for 7 Days [HKG, MAC]",
+        "category": "Plastic SIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1358",
+        "name": "Plastic SIM - South Korea - 20 GB For 15 Days",
+        "category": "Plastic SIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1359",
+        "name": "eSIM - United Kingdom - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1360",
+        "name": "Spain - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1361",
+        "name": "France - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1362",
+        "name": "Italy - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1363",
+        "name": "Malaysia - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1364",
+        "name": "Plastic SIM - 20GB for  Days [USA]",
+        "category": "Plastic SIM",
+        "price": 1270.34,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1365",
+        "name": "Australia - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1366",
+        "name": "eSIM - Switzerland - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1367",
+        "name": "eSIM - Europe (47) - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1368",
+        "name": "pSIM - Orange Holiday Europe - 20 GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1369",
+        "name": "Plastic SIM - Singapore, Malaysia - 20 GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1370",
+        "name": "eSIM - Japan - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1524.58,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1371",
+        "name": "Plastic SIM - 20GB for 15 Days [SGP, MYS, IDN, THA]",
+        "category": "Plastic SIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1372",
+        "name": "eSIM - Sri Lanka - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1373",
+        "name": "New Zealand - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1374",
+        "name": "Plastic SIM - Europe[+] - 20 GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1863.56,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1375",
+        "name": "eSIM - Saudi Arabia - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1948.31,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1376",
+        "name": "eSIM - Orange World - 20 GB For 30 Days",
+        "category": "eSIM",
+        "price": 2033.05,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1377",
+        "name": "Europe - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1378",
+        "name": "Europe - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1379",
+        "name": "China - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1380",
+        "name": "Singapore - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1381",
+        "name": "United Arab Emirates - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2965.25,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1382",
+        "name": "Morocco - 20 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2965.25,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1383",
+        "name": "Plastic SIM - USA, Canada, Mexico - 20 GB For 15 Days",
+        "category": "Plastic SIM",
+        "price": 3219.49,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1384",
+        "name": "eSIM - United States - 30 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1385",
+        "name": "Plastic SIM - United States [AT&T] - 30GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1524.58,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1386",
+        "name": "eSIM - Taiwan - 30 GB For 15 Days",
+        "category": "eSIM",
+        "price": 1694.07,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1387",
+        "name": "eSIM - Japan - 30 GB For 15 Days",
+        "category": "eSIM",
+        "price": 1948.31,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1388",
+        "name": "Plastic SIM - Malaysia [TuneTalk] - 40 GB For 15 Days",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1389",
+        "name": "Plastic SIM - United Kingdom [3UK] - 40GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1016.1,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1390",
+        "name": "eSIM - United Kingdom - 40 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1100.85,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1391",
+        "name": "eSIM - Thailand - 50 GB For 10 Days",
+        "category": "eSIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1392",
+        "name": "Plastic SIM - Thailand [True] - 50 GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 761.86,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1393",
+        "name": "eSIM - United States - 50 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1609.32,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1394",
+        "name": "United States of America - 50 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2117.8,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1395",
+        "name": "Indonesia - 50 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2287.29,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1396",
+        "name": "eSIM - Japan - 50 GB For 30 Days",
+        "category": "eSIM",
+        "price": 2456.78,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1397",
+        "name": "Sri Lanka - 50 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1398",
+        "name": "Netherlands - 50 GB for 30 Days",
+        "category": "eSIM",
+        "price": 2541.53,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1399",
+        "name": "Plastic SIM - United Kingdom [3UK] - 100GB For 30 Days",
+        "category": "Plastic SIM",
+        "price": 1439.83,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1400",
+        "name": "eSIM - United Kingdom - 100 GB For 30 Days",
+        "category": "eSIM",
+        "price": 1524.58,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1401",
+        "name": "United States of America - 100 GB for 30 Days",
+        "category": "eSIM",
+        "price": 3134.75,
+        "stock": "Unlimited",
+        "status": "Active"
+    },
+    {
+        "id": "1402",
+        "name": "eSIM - Europe (47) - 100 GB For 28 Days",
+        "category": "eSIM",
+        "price": 3727.97,
+        "stock": "Unlimited",
+        "status": "Active"
+    }
 ]
