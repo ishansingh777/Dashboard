@@ -76,6 +76,14 @@
         color: var(--text-primary);
     }
     
+    .mobile-close {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-secondary);
+        cursor: pointer;
+    }
+    
     .top-header {
         padding: 0 16px;
     }
