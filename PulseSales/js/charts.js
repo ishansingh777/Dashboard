@@ -1,170 +1,168 @@
 // js/charts.js
 
-let mainRevenueChart = null;
-let salesBarChart = null;
-let regionDonutChart = null;
+let heroChartInstance = null;
+let performanceChartInstance = null;
+let breakdownChartInstance = null;
 
 function getChartColors() {
     const isDark = document.body.classList.contains('dark-mode');
     return {
-        text: isDark ? '#94a3b8' : '#475569',
-        grid: isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)',
-        indigo: isDark ? '#6366f1' : '#4f46e5',
-        indigoLight: isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(79, 70, 229, 0.1)',
-        cyan: '#06b6d4',
-        amber: '#f59e0b',
-        green: '#10b981',
-        tooltipBg: isDark ? 'rgba(16, 21, 34, 0.95)' : 'rgba(255, 255, 255, 0.95)',
-        tooltipText: isDark ? '#f8fafc' : '#0f172a'
+        text: isDark ? '#9CA3AF' : '#6B7280',
+        grid: isDark ? '#1F2937' : '#E5E7EB',
+        primary: isDark ? '#6366F1' : '#4F46E5',
+        primaryBg: isDark ? 'rgba(99, 102, 241, 0.1)' : 'rgba(79, 70, 229, 0.1)'
     };
 }
 
-function initCharts(salesData) {
-    if (!salesData) return;
-    
-    Chart.defaults.font.family = "'Inter', sans-serif";
-    
-    renderMainRevenueChart(salesData.monthly_revenue);
-    renderSalesBarChart(salesData.weekly_revenue);
-    renderRegionDonutChart(salesData.regional);
-}
-
-function getCommonOptions() {
+function initCharts() {
     const colors = getChartColors();
-    return {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-            legend: { display: false },
-            tooltip: {
-                backgroundColor: colors.tooltipBg,
-                titleColor: colors.tooltipText,
-                bodyColor: colors.tooltipText,
-                borderColor: colors.grid,
-                borderWidth: 1,
-                padding: 12,
-                boxPadding: 6,
-                cornerRadius: 8,
-                titleFont: { size: 13, family: "'Inter', sans-serif" },
-                bodyFont: { size: 12, family: "'Inter', sans-serif" }
+    const { sales } = window.store;
+    if (!sales) return;
+
+    // 1. Hero Sparkline
+    const heroCtx = document.getElementById('hero-revenue-chart');
+    if (heroCtx) {
+        if (heroChartInstance) heroChartInstance.destroy();
+        
+        const data = sales.weekly_revenue.map(d => d.value);
+        heroChartInstance = new Chart(heroCtx, {
+            type: 'line',
+            data: {
+                labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+                datasets: [{
+                    data: data,
+                    borderColor: colors.primary,
+                    borderWidth: 2,
+                    tension: 0.4,
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                    fill: true,
+                    backgroundColor: colors.primaryBg
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false }, tooltip: { enabled: true, mode: 'index', intersect: false } },
+                scales: { x: { display: false }, y: { display: false } },
+                interaction: { mode: 'index', intersect: false }
             }
-        },
-        interaction: { mode: 'index', intersect: false }
-    };
-}
+        });
+    }
 
-function renderMainRevenueChart(monthlyData) {
-    const ctx = document.getElementById('main-revenue-chart');
-    if (!ctx) return;
-    if (mainRevenueChart) mainRevenueChart.destroy();
-    
-    const colors = getChartColors();
-    const labels = monthlyData.map(d => d.month);
-    const data = monthlyData.map(d => d.revenue);
-
-    const gradient = ctx.getContext('2d').createLinearGradient(0, 0, 0, 350);
-    gradient.addColorStop(0, colors.indigoLight);
-    gradient.addColorStop(1, 'rgba(0,0,0,0)');
-
-    const opts = getCommonOptions();
-    opts.scales = {
-        x: { grid: { display: false }, ticks: { color: colors.text } },
-        y: { grid: { color: colors.grid }, ticks: { color: colors.text, callback: val => '$' + val / 1000 + 'k' } }
-    };
-
-    mainRevenueChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels,
-            datasets: [{
-                label: 'Net Revenue',
-                data,
-                borderColor: colors.indigo,
-                backgroundColor: gradient,
-                borderWidth: 2,
-                fill: true,
-                tension: 0.4,
-                pointBackgroundColor: colors.indigo,
-                pointBorderColor: '#fff',
-                pointRadius: 4,
-                pointHoverRadius: 6
-            }]
-        },
-        options: opts
-    });
-}
-
-function renderSalesBarChart(weeklyData) {
-    const ctx = document.getElementById('sales-bar-chart');
-    if (!ctx) return;
-    if (salesBarChart) salesBarChart.destroy();
-
-    const colors = getChartColors();
-    const labels = weeklyData.map(d => d.day);
-    const data = weeklyData.map(d => d.value);
-
-    const opts = getCommonOptions();
-    opts.scales = {
-        x: { grid: { display: false }, ticks: { color: colors.text } },
-        y: { grid: { color: colors.grid }, ticks: { color: colors.text, callback: val => '$' + val / 1000 + 'k' } }
-    };
-
-    salesBarChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels,
-            datasets: [{
-                label: 'Sales',
-                data,
-                backgroundColor: colors.cyan,
-                borderRadius: 4,
-                barPercentage: 0.6
-            }]
-        },
-        options: opts
-    });
-}
-
-function renderRegionDonutChart(regionalData) {
-    const ctx = document.getElementById('region-donut-chart');
-    if (!ctx) return;
-    if (regionDonutChart) regionDonutChart.destroy();
-
-    const colors = getChartColors();
-    const labels = ['North America', 'Europe', 'Asia-Pacific', 'Other'];
-    const data = [
-        regionalData.north_america,
-        regionalData.europe,
-        regionalData.asia_pacific,
-        regionalData.other
-    ];
-
-    regionDonutChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            labels,
-            datasets: [{
-                data,
-                backgroundColor: [colors.indigo, colors.cyan, colors.amber, colors.green],
-                borderWidth: 0,
-                hoverOffset: 4
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            cutout: '75%',
-            plugins: {
-                legend: { position: 'right', labels: { color: colors.text, padding: 20, font: { family: "'Inter', sans-serif" } } },
-                tooltip: getCommonOptions().plugins.tooltip
+    // 2. Performance Line Chart
+    const perfCtx = document.getElementById('performance-chart');
+    if (perfCtx) {
+        if (performanceChartInstance) performanceChartInstance.destroy();
+        
+        performanceChartInstance = new Chart(perfCtx, {
+            type: 'line',
+            data: {
+                labels: sales.monthly_revenue.map(d => d.month),
+                datasets: [{
+                    label: 'Revenue',
+                    data: sales.monthly_revenue.map(d => d.revenue),
+                    borderColor: colors.primary,
+                    borderWidth: 2,
+                    tension: 0.3,
+                    pointBackgroundColor: colors.primary,
+                    pointRadius: 0,
+                    pointHoverRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        backgroundColor: 'rgba(17, 24, 39, 0.9)',
+                        titleFont: { family: 'Inter', size: 13 },
+                        bodyFont: { family: 'Inter', size: 13 },
+                        padding: 12,
+                        cornerRadius: 8,
+                        displayColors: false,
+                        callbacks: {
+                            label: function(context) {
+                                return formatCurrency(context.parsed.y);
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false, drawBorder: false },
+                        ticks: { color: colors.text, font: { family: 'Inter', size: 11 } }
+                    },
+                    y: {
+                        grid: { color: colors.grid, drawBorder: false, borderDash: [4, 4] },
+                        ticks: {
+                            color: colors.text,
+                            font: { family: 'Inter', size: 11 },
+                            callback: function(val) { return '$' + (val / 1000) + 'k'; }
+                        }
+                    }
+                },
+                interaction: { mode: 'index', intersect: false }
             }
+        });
+    }
+
+    // 3. Breakdown Donut Chart
+    const breakCtx = document.getElementById('breakdown-chart');
+    if (breakCtx) {
+        if (breakdownChartInstance) breakdownChartInstance.destroy();
+        
+        const isDark = document.body.classList.contains('dark-mode');
+        const bgColors = isDark 
+            ? ['#6366F1', '#22D3EE', '#FBBF24', '#34D399', '#374151']
+            : ['#4F46E5', '#06B6D4', '#F59E0B', '#10B981', '#E5E7EB'];
+            
+        const labels = ['Electronics', 'Fashion', 'Home', 'Beauty', 'Other'];
+        const values = [45, 25, 15, 10, 5]; // percentages
+        
+        breakdownChartInstance = new Chart(breakCtx, {
+            type: 'doughnut',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: values,
+                    backgroundColor: bgColors,
+                    borderWidth: 0,
+                    cutout: '75%'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { enabled: false }
+                }
+            }
+        });
+        
+        // Render custom legend
+        const legendContainer = document.getElementById('breakdown-legend');
+        if (legendContainer) {
+            legendContainer.innerHTML = labels.map((label, i) => `
+                <div class="legend-item">
+                    <div class="label">
+                        <span class="dot" style="background-color: ${bgColors[i]}"></span>
+                        ${label}
+                    </div>
+                    <span class="val">${values[i]}%</span>
+                </div>
+            `).join('');
         }
-    });
+    }
 }
 
-// Redraw on theme change
-window.addEventListener('themeChanged', () => {
-    if (window.dashboardData && window.dashboardData.sales) {
-        initCharts(window.dashboardData.sales);
+// Re-init on theme change
+document.addEventListener('themeChanged', () => {
+    if (window.store && window.store.sales) {
+        initCharts();
     }
 });

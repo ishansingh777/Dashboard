@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PulseSales Command Center</title>
+    <title>PulseSales Analytics</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -18,69 +18,64 @@
 
     <!-- Project Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="light-mode">
+<body class="light-mode" data-theme="light">
     <div class="app-shell">
         
         <!-- SIDEBAR -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="brand">
-                    <i data-lucide="cpu" class="brand-icon pulse"></i>
+                    <div class="brand-icon-wrapper">
+                        <i data-lucide="activity" class="brand-icon"></i>
+                    </div>
                     <div class="brand-text">
-                        <h1>PULSESALES</h1>
-                        <p>AI BUSINESS INTELLIGENCE</p>
+                        <h1>PulseSales</h1>
+                        <p>BUSINESS INTELLIGENCE</p>
                     </div>
                 </div>
-                <button class="mobile-close" id="mobile-close-btn">
+                <button class="mobile-close" id="mobile-close-btn" aria-label="Close sidebar">
                     <i data-lucide="x"></i>
                 </button>
             </div>
 
-            <nav class="sidebar-nav">
-                <a href="#" class="nav-item active" data-tab="overview">
-                    <i data-lucide="layout-dashboard"></i> <span>Overview</span>
-                </a>
-                <a href="#" class="nav-item" data-tab="analytics">
-                    <i data-lucide="bar-chart-2"></i> <span>Analytics</span>
-                </a>
-                <a href="#" class="nav-item" data-tab="orders">
-                    <i data-lucide="shopping-cart"></i> <span>Orders</span>
-                </a>
-                <a href="#" class="nav-item" data-tab="customers">
-                    <i data-lucide="users"></i> <span>Customers</span>
-                </a>
-                <a href="#" class="nav-item" data-tab="products">
-                    <i data-lucide="package"></i> <span>Products</span>
-                </a>
-                <a href="#" class="nav-item" data-tab="intelligence">
-                    <i data-lucide="globe"></i> <span>Global Intelligence</span>
-                </a>
-                <a href="#" class="nav-item" data-tab="ai">
-                    <i data-lucide="sparkles"></i> <span>AI Insights</span>
-                </a>
-            </nav>
+            <div class="sidebar-scroll">
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active" data-tab="overview">
+                        <i data-lucide="layout-grid"></i> <span>Overview</span>
+                    </a>
+                    <a href="#" class="nav-item" data-tab="analytics">
+                        <i data-lucide="bar-chart-2"></i> <span>Analytics</span>
+                    </a>
+                    <a href="#" class="nav-item" data-tab="orders">
+                        <i data-lucide="shopping-cart"></i> <span>Orders</span>
+                    </a>
+                    <a href="#" class="nav-item" data-tab="customers">
+                        <i data-lucide="users"></i> <span>Customers</span>
+                    </a>
+                    <a href="#" class="nav-item" data-tab="products">
+                        <i data-lucide="package"></i> <span>Products</span>
+                    </a>
+
+                    <div class="nav-section-title">INTELLIGENCE</div>
+                    <a href="#" class="nav-item" data-tab="insights">
+                        <i data-lucide="lightbulb"></i> <span>Insights</span>
+                    </a>
+                    <a href="#" class="nav-item" data-tab="forecast">
+                        <i data-lucide="trending-up"></i> <span>Forecast</span>
+                    </a>
+                    <a href="#" class="nav-item" data-tab="performance">
+                        <i data-lucide="activity"></i> <span>Performance</span>
+                    </a>
+                </nav>
+            </div>
 
             <div class="sidebar-footer">
-                <div class="system-status-panel">
-                    <div class="status-header">SYSTEM STATUS</div>
-                    <div class="status-indicator"><span class="dot green"></span> All systems operational</div>
-                    
-                    <div class="status-list">
-                        <div class="status-item">
-                            <span>Database</span>
-                            <span class="badge success">CONNECTED</span>
-                        </div>
-                        <div class="status-item">
-                            <span>Realtime</span>
-                            <span class="badge success live-pulse">LIVE</span>
-                        </div>
-                        <div class="status-item">
-                            <span>AI Engine</span>
-                            <span class="badge success">ONLINE</span>
-                        </div>
-                    </div>
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Systems operational</span>
                 </div>
             </div>
         </aside>
@@ -91,494 +86,303 @@
             <!-- TOP HEADER -->
             <header class="top-header">
                 <div class="header-left">
-                    <button class="menu-toggle" id="menu-toggle-btn">
+                    <button class="menu-toggle" id="menu-toggle-btn" aria-label="Open sidebar">
                         <i data-lucide="menu"></i>
                     </button>
-                    <div class="header-titles">
-                        <div class="breadcrumb">PulseSales / Overview</div>
-                        <h2>Business Overview</h2>
+                    <div class="header-title-group">
+                        <h2 id="page-title">Overview</h2>
+                        <p>Sales performance and business intelligence</p>
                     </div>
                 </div>
                 
                 <div class="header-right">
-                    <div class="live-indicator hidden" id="global-live-indicator">
-                        <span class="dot red"></span> LIVE DATA
+                    <div class="live-indicator">
+                        <span class="pulse-dot"></span> LIVE
                     </div>
-                    <select class="header-select">
-                        <option>Last 7 Days</option>
-                        <option>Last 30 Days</option>
-                        <option>This Quarter</option>
-                        <option>This Year</option>
-                    </select>
+                    
+                    <div class="timeframe-selector">
+                        <select id="global-timeframe" class="select-input">
+                            <option value="7D">Last 7 Days</option>
+                            <option value="30D">Last 30 Days</option>
+                            <option value="90D">Last 90 Days</option>
+                            <option value="1Y">This Year</option>
+                        </select>
+                    </div>
+                    
                     <button class="icon-btn" id="refresh-btn" title="Refresh Data">
                         <i data-lucide="refresh-cw"></i>
-                    </button>
-                    <button class="icon-btn" title="Notifications">
-                        <i data-lucide="bell"></i>
                     </button>
                     <button class="icon-btn" id="theme-toggle-btn" title="Toggle Theme">
                         <i data-lucide="moon"></i>
                     </button>
-                    <button class="ai-assistant-btn" id="ai-assistant-trigger">
-                        <i data-lucide="sparkles"></i> AI Assistant
+                    <button class="icon-btn" title="Notifications">
+                        <i data-lucide="bell"></i>
                     </button>
                     <div class="user-avatar">
-                        <img src="https://ui-avatars.com/api/?name=Admin+User&background=4f46e5&color=fff" alt="User">
+                        <img src="https://ui-avatars.com/api/?name=Admin+User&background=111827&color=fff&font-size=0.33" alt="User">
                     </div>
                 </div>
             </header>
 
-            <div class="scroll-container">
+            <div class="content-scroll" id="main-scroll-area">
+                
                 <!-- TAB PANES -->
                 <div id="tab-overview" class="tab-pane active">
-                    <!-- HERO / AI INSIGHT SECTION -->
-                    <section class="hero-section">
-                    <div class="hero-revenue card glass">
-                        <div class="card-header">TOTAL REVENUE</div>
-                        <div class="revenue-main">
-                            <h2 id="total-revenue-val">$0.00</h2>
-                            <span class="trend up" id="total-revenue-trend"><i data-lucide="trending-up"></i> 0% vs previous period</span>
-                        </div>
-                        <div class="revenue-sparkline-container">
-                            <canvas id="hero-sparkline"></canvas>
-                        </div>
-                        <div class="revenue-breakdown">
-                            <div class="breakdown-item">
-                                <span class="label">Gross Volume</span>
-                                <span class="value" id="gross-volume-val">$0.00</span>
-                            </div>
-                            <div class="breakdown-item">
-                                <span class="label">Discounts</span>
-                                <span class="value negative" id="discounts-val">-$0.00</span>
-                            </div>
-                            <div class="breakdown-item">
-                                <span class="label">Average Order Value</span>
-                                <span class="value" id="aov-val">$0.00</span>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <div class="hero-ai card glass ai-glow">
-                        <div class="ai-card-header">
-                            <div class="title"><i data-lucide="sparkles"></i> PULSE AI</div>
-                            <div class="status"><span class="dot green"></span> LIVE</div>
+                    <!-- 1. HERO METRIC -->
+                    <section class="hero-revenue-section panel">
+                        <div class="hero-header">
+                            <h3>Revenue</h3>
                         </div>
-                        <h3 class="ai-main-message">Revenue velocity increased 18.4% this week.</h3>
+                        <div class="hero-body">
+                            <div class="hero-main-metric">
+                                <div class="metric-value" id="hero-revenue-val">--</div>
+                                <div class="metric-trend positive" id="hero-revenue-trend">--</div>
+                                <div class="metric-context">vs previous period</div>
+                            </div>
+                            
+                            <div class="hero-chart-area">
+                                <canvas id="hero-revenue-chart"></canvas>
+                            </div>
+                            
+                            <div class="hero-breakdown">
+                                <div class="breakdown-row">
+                                    <span class="label">Gross Revenue</span>
+                                    <span class="val" id="hero-gross-val">--</span>
+                                </div>
+                                <div class="breakdown-row">
+                                    <span class="label">Discounts</span>
+                                    <span class="val negative" id="hero-discounts-val">--</span>
+                                </div>
+                                <div class="breakdown-divider"></div>
+                                <div class="breakdown-row strong">
+                                    <span class="label">Net Revenue</span>
+                                    <span class="val" id="hero-net-val">--</span>
+                                </div>
+                                <div class="breakdown-row mt-3">
+                                    <span class="label">Average Order</span>
+                                    <span class="val" id="hero-aov-val">--</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. KPI STRIP -->
+                    <section class="kpi-strip">
+                        <div class="kpi-card panel">
+                            <div class="kpi-top">
+                                <span class="kpi-title">Orders</span>
+                                <span class="kpi-trend positive" id="kpi-orders-trend">--</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-orders-val">--</div>
+                        </div>
+                        <div class="kpi-card panel">
+                            <div class="kpi-top">
+                                <span class="kpi-title">Customers</span>
+                                <span class="kpi-trend positive" id="kpi-customers-trend">--</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-customers-val">--</div>
+                        </div>
+                        <div class="kpi-card panel">
+                            <div class="kpi-top">
+                                <span class="kpi-title">AOV</span>
+                                <span class="kpi-trend positive" id="kpi-aov-trend">--</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-aov-val">--</div>
+                        </div>
+                        <div class="kpi-card panel">
+                            <div class="kpi-top">
+                                <span class="kpi-title">Conversion</span>
+                                <span class="kpi-trend positive" id="kpi-conv-trend">--</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-conv-val">--</div>
+                        </div>
+                    </section>
+
+                    <!-- 3. MAIN ANALYTICS -->
+                    <section class="analytics-grid-65-35">
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Revenue Performance</h3>
+                                <div class="segmented-control" id="revenue-chart-controls">
+                                    <button class="active" data-range="7D">7D</button>
+                                    <button data-range="30D">30D</button>
+                                    <button data-range="90D">90D</button>
+                                    <button data-range="1Y">1Y</button>
+                                </div>
+                            </div>
+                            <div class="panel-body chart-container" style="height: 300px;">
+                                <canvas id="performance-chart"></canvas>
+                            </div>
+                        </div>
                         
-                        <div class="ai-metrics">
-                            <div class="ai-metric">
-                                <span class="label">Revenue Growth</span>
-                                <span class="value positive">18.4%</span>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Sales Breakdown</h3>
                             </div>
-                            <div class="ai-metric">
-                                <span class="label">Order Conversion</span>
-                                <span class="value">7.8%</span>
+                            <div class="panel-body chart-container donut-container" style="height: 240px;">
+                                <canvas id="breakdown-chart"></canvas>
                             </div>
-                            <div class="ai-metric">
-                                <span class="label">Customer Retention</span>
-                                <span class="value">84.2%</span>
+                            <div class="donut-legend" id="breakdown-legend">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 4. PERFORMANCE & INTELLIGENCE -->
+                    <section class="analytics-grid-33-33-33">
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Regional Performance</h3>
+                            </div>
+                            <div class="panel-body list-container" id="regional-list">
+                                <!-- Populated by JS -->
                             </div>
                         </div>
                         
-                        <div class="ai-recommendation">
-                            <i data-lucide="info"></i>
-                            <p>Asia-Pacific traffic is approaching peak capacity. Consider reallocating campaign budget toward North America.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- KPI GRID -->
-                <section class="kpi-grid">
-                    <div class="kpi-card card glass">
-                        <div class="kpi-header">
-                            <div class="kpi-icon-wrapper"><i data-lucide="banknote"></i></div>
-                            <div class="trend up"><i data-lucide="arrow-up-right"></i> <span id="kpi-today-trend">0%</span></div>
-                        </div>
-                        <div class="kpi-body">
-                            <div class="kpi-label">Today's Sales</div>
-                            <div class="kpi-value" id="kpi-today-val">$0</div>
-                        </div>
-                    </div>
-
-                    <div class="kpi-card card glass">
-                        <div class="kpi-header">
-                            <div class="kpi-icon-wrapper"><i data-lucide="bar-chart-3"></i></div>
-                            <div class="trend up"><i data-lucide="arrow-up-right"></i> <span id="kpi-month-trend">0%</span></div>
-                        </div>
-                        <div class="kpi-body">
-                            <div class="kpi-label">Monthly Revenue</div>
-                            <div class="kpi-value" id="kpi-month-val">$0</div>
-                        </div>
-                    </div>
-
-                    <div class="kpi-card card glass">
-                        <div class="kpi-header">
-                            <div class="kpi-icon-wrapper"><i data-lucide="shopping-bag"></i></div>
-                            <div class="trend up"><i data-lucide="arrow-up-right"></i> <span id="kpi-orders-trend">0%</span></div>
-                        </div>
-                        <div class="kpi-body">
-                            <div class="kpi-label">Total Orders</div>
-                            <div class="kpi-value" id="kpi-orders-val">0</div>
-                        </div>
-                    </div>
-
-                    <div class="kpi-card card glass">
-                        <div class="kpi-header">
-                            <div class="kpi-icon-wrapper"><i data-lucide="clock"></i></div>
-                            <div class="trend down"><i data-lucide="arrow-down-right"></i> <span id="kpi-pending-trend">0%</span></div>
-                        </div>
-                        <div class="kpi-body">
-                            <div class="kpi-label">Pending Orders</div>
-                            <div class="kpi-value" id="kpi-pending-val">0</div>
-                        </div>
-                    </div>
-
-                    <div class="kpi-card card glass">
-                        <div class="kpi-header">
-                            <div class="kpi-icon-wrapper"><i data-lucide="users"></i></div>
-                            <div class="trend up"><i data-lucide="arrow-up-right"></i> <span id="kpi-customers-trend">0%</span></div>
-                        </div>
-                        <div class="kpi-body">
-                            <div class="kpi-label">Customers</div>
-                            <div class="kpi-value" id="kpi-customers-val">0</div>
-                        </div>
-                    </div>
-
-                    <div class="kpi-card card glass">
-                        <div class="kpi-header">
-                            <div class="kpi-icon-wrapper"><i data-lucide="target"></i></div>
-                            <div class="trend up"><i data-lucide="arrow-up-right"></i> <span id="kpi-conversion-trend">0%</span></div>
-                        </div>
-                        <div class="kpi-body">
-                            <div class="kpi-label">Conversion Rate</div>
-                            <div class="kpi-value" id="kpi-conversion-val">0%</div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- REVENUE ANALYTICS -->
-                <section class="revenue-analytics card glass">
-                    <div class="section-header">
-                        <h3>Revenue Intelligence</h3>
-                        <div class="controls toggle-group">
-                            <button class="active">7D</button>
-                            <button>30D</button>
-                            <button>90D</button>
-                            <button>1Y</button>
-                        </div>
-                    </div>
-                    <div class="chart-container" style="height: 350px;">
-                        <canvas id="main-revenue-chart"></canvas>
-                    </div>
-                </section>
-
-                <!-- SALES PERFORMANCE (2 COL) -->
-                <section class="two-col-grid">
-                    <div class="card glass">
-                        <div class="section-header">
-                            <h3>Sales Performance</h3>
-                        </div>
-                        <div class="chart-container" style="height: 250px;">
-                            <canvas id="sales-bar-chart"></canvas>
-                        </div>
-                    </div>
-                    <div class="card glass">
-                        <div class="section-header">
-                            <h3>Revenue Distribution</h3>
-                        </div>
-                        <div class="chart-container" style="height: 250px; display: flex; justify-content: center; align-items: center;">
-                            <canvas id="region-donut-chart"></canvas>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- GLOBAL INTELLIGENCE & LIVE ORDERS -->
-                <section class="two-col-grid asymmetric">
-                    <!-- GLOBAL INTELLIGENCE -->
-                    <div class="card glass global-intel">
-                        <div class="section-header">
-                            <h3>Global Intelligence</h3>
-                            <button class="icon-btn"><i data-lucide="maximize-2"></i></button>
-                        </div>
-                        <div class="map-container">
-                            <div class="stylized-map">
-                                <!-- Simulated SVG Map structure -->
-                                <svg viewBox="0 0 800 400" class="world-map">
-                                    <path class="map-land" d="M150,100 Q180,90 200,120 T220,180 T180,220 T140,160 Z" />
-                                    <path class="map-land" d="M400,80 Q430,70 460,90 T480,140 T440,160 T390,120 Z" />
-                                    <path class="map-land" d="M600,120 Q640,100 680,140 T650,220 T580,200 Z" />
-                                    <circle class="map-node active" cx="180" cy="140" r="5" />
-                                    <circle class="map-node active" cx="440" cy="110" r="5" />
-                                    <circle class="map-node active" cx="620" cy="160" r="4" />
-                                    <circle class="map-node active" cx="660" cy="180" r="6" />
-                                </svg>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Top Products</h3>
                             </div>
-                            <div class="map-stats">
-                                <div class="map-stat">
-                                    <div class="label">North America</div>
-                                    <div class="value" id="map-na">$0</div>
-                                </div>
-                                <div class="map-stat">
-                                    <div class="label">Europe</div>
-                                    <div class="value" id="map-eu">$0</div>
-                                </div>
-                                <div class="map-stat">
-                                    <div class="label">Asia-Pacific</div>
-                                    <div class="value" id="map-ap">$0</div>
-                                </div>
-                                <div class="map-stat">
-                                    <div class="label">Other</div>
-                                    <div class="value" id="map-other">$0</div>
+                            <div class="panel-body list-container" id="products-list">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                        
+                        <div class="panel intelligence-panel">
+                            <div class="panel-header">
+                                <h3>Pulse Intelligence</h3>
+                            </div>
+                            <div class="panel-body insights-list" id="insights-container">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 5. RECENT ORDERS & ACTIVITY -->
+                    <section class="analytics-grid-70-30">
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Recent Orders</h3>
+                                <div class="header-actions">
+                                    <div class="search-input-wrapper">
+                                        <i data-lucide="search"></i>
+                                        <input type="text" id="order-search" placeholder="Search orders...">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- LIVE ORDERS -->
-                    <div class="card glass live-orders-card">
-                        <div class="section-header">
-                            <h3>Live Orders</h3>
-                            <div class="table-actions">
-                                <div class="search-box">
-                                    <i data-lucide="search"></i>
-                                    <input type="text" placeholder="Search orders...">
-                                </div>
-                                <button class="icon-btn"><i data-lucide="filter"></i></button>
+                            <div class="table-responsive">
+                                <table class="data-table" id="orders-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Order</th>
+                                            <th>Customer</th>
+                                            <th>Product</th>
+                                            <th>Region</th>
+                                            <th class="text-right">Amount</th>
+                                            <th>Status</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="orders-tbody">
+                                        <!-- Populated by JS -->
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="table-responsive">
-                            <table class="modern-table">
-                                <thead>
-                                    <tr>
-                                        <th>Order ID</th>
-                                        <th>Customer</th>
-                                        <th>Product</th>
-                                        <th>Region</th>
-                                        <th>Amount</th>
-                                        <th>Status</th>
-                                        <th>Time</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="live-orders-tbody">
-                                    <!-- Populated by JS -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- AI COMMAND CENTER SECTION -->
-                <section class="ai-command-center card glass">
-                    <div class="ai-center-header">
-                        <div class="ai-title">
-                            <h3><i data-lucide="brain-circuit"></i> Pulse AI Command Center</h3>
-                            <p>Real-time intelligence generated from your sales ecosystem.</p>
-                        </div>
-                        <button class="btn primary" id="generate-report-btn">
-                            <i data-lucide="file-text"></i> Generate AI Report
-                        </button>
-                    </div>
-                    <div class="ai-insights-grid">
-                        <div class="ai-insight-box">
-                            <div class="box-icon blue"><i data-lucide="line-chart"></i></div>
-                            <div class="box-content">
-                                <h4>Revenue Forecast</h4>
-                                <p>Expected monthly revenue: <strong>$742K</strong></p>
-                                <span class="confidence">Confidence: 94%</span>
+                        
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Activity Stream</h3>
+                            </div>
+                            <div class="panel-body activity-feed" id="activity-stream">
+                                <!-- Populated by JS -->
                             </div>
                         </div>
-                        <div class="ai-insight-box">
-                            <div class="box-icon amber"><i data-lucide="alert-triangle"></i></div>
-                            <div class="box-content">
-                                <h4>Anomaly Detection</h4>
-                                <p><strong>3 unusual transaction patterns</strong> detected in the last hour.</p>
-                            </div>
-                        </div>
-                        <div class="ai-insight-box">
-                            <div class="box-icon green"><i data-lucide="lightbulb"></i></div>
-                            <div class="box-content">
-                                <h4>Growth Opportunity</h4>
-                                <p>North America conversion rate is <strong>23% above average</strong>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
                 </div> <!-- End tab-overview -->
                 
+                <!-- PLACEHOLDER TABS -->
                 <div id="tab-analytics" class="tab-pane">
-                    <div class="card glass">
-                        <div class="section-header">
-                            <h3>Analytics Hub</h3>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="modern-table">
-                                <thead>
-                                    <tr>
-                                        <th>Month</th>
-                                        <th>Revenue</th>
-                                        <th>Orders</th>
-                                        <th>Customers</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="analytics-tbody">
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="empty-state">
+                        <i data-lucide="bar-chart-2"></i>
+                        <h3>Detailed Analytics</h3>
+                        <p>Explore deep cuts of your data.</p>
                     </div>
                 </div>
-
                 <div id="tab-orders" class="tab-pane">
-                    <div class="card glass">
-                        <div class="section-header">
-                            <h3>Order Management</h3>
-                            <div class="table-actions">
-                                <div class="search-box">
-                                    <i data-lucide="search"></i>
-                                    <input type="text" placeholder="Search orders...">
-                                </div>
-                                <button class="icon-btn"><i data-lucide="filter"></i></button>
-                            </div>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="modern-table">
-                                <thead>
-                                    <tr>
-                                        <th>Order ID</th>
-                                        <th>Customer</th>
-                                        <th>Product</th>
-                                        <th>Region</th>
-                                        <th>Amount</th>
-                                        <th>Status</th>
-                                        <th>Time</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="orders-page-tbody">
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="empty-state">
+                        <i data-lucide="shopping-cart"></i>
+                        <h3>Order Management</h3>
+                        <p>View and manage all historical orders.</p>
                     </div>
                 </div>
-
                 <div id="tab-customers" class="tab-pane">
-                    <div class="card glass">
-                        <div class="section-header">
-                            <h3>Customer Directory</h3>
-                            <div class="table-actions">
-                                <div class="search-box">
-                                    <i data-lucide="search"></i>
-                                    <input type="text" placeholder="Search customers...">
-                                </div>
-                                <button class="btn primary">Add Customer</button>
-                            </div>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="modern-table">
-                                <thead>
-                                    <tr>
-                                        <th>Customer ID</th>
-                                        <th>Name</th>
-                                        <th>Tier</th>
-                                        <th>Lifetime Value</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="customers-tbody">
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="empty-state">
+                        <i data-lucide="users"></i>
+                        <h3>Customer Directory</h3>
+                        <p>Segment and analyze customer behavior.</p>
                     </div>
                 </div>
-                
                 <div id="tab-products" class="tab-pane">
-                    <div class="card glass">
-                        <div class="section-header">
-                            <h3>Product Inventory</h3>
-                            <div class="table-actions">
-                                <button class="btn primary">Add Product</button>
-                            </div>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="modern-table">
-                                <thead>
-                                    <tr>
-                                        <th>Product ID</th>
-                                        <th>Name</th>
-                                        <th>Category</th>
-                                        <th>Price</th>
-                                        <th>Stock</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="products-tbody">
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="empty-state">
+                        <i data-lucide="package"></i>
+                        <h3>Product Inventory</h3>
+                        <p>Track product performance and stock.</p>
                     </div>
                 </div>
-
-                <div id="tab-intelligence" class="tab-pane">
-                    <div class="card glass" style="padding: 48px; text-align: center;">
-                        <i data-lucide="globe" style="width: 48px; height: 48px; color: var(--text-tertiary); margin-bottom: 16px;"></i>
-                        <h3>Global Intelligence</h3>
-                        <p style="color: var(--text-secondary); margin-top: 8px;">Expanded geographical heatmaps.</p>
+                <div id="tab-insights" class="tab-pane">
+                    <div class="empty-state">
+                        <i data-lucide="lightbulb"></i>
+                        <h3>Deep Insights</h3>
+                        <p>Advanced anomaly detection and trends.</p>
                     </div>
                 </div>
-
-                <div id="tab-ai" class="tab-pane">
-                    <div class="card glass" style="padding: 48px; text-align: center;">
-                        <i data-lucide="sparkles" style="width: 48px; height: 48px; color: var(--accent-indigo); margin-bottom: 16px;"></i>
-                        <h3>AI Control Room</h3>
-                        <p style="color: var(--text-secondary); margin-top: 8px;">Deep AI analysis and automated suggestions.</p>
+                <div id="tab-forecast" class="tab-pane">
+                    <div class="empty-state">
+                        <i data-lucide="trending-up"></i>
+                        <h3>Revenue Forecast</h3>
+                        <p>Predictive modeling for future quarters.</p>
                     </div>
                 </div>
-
+                <div id="tab-performance" class="tab-pane">
+                    <div class="empty-state">
+                        <i data-lucide="activity"></i>
+                        <h3>System Performance</h3>
+                        <p>Platform health and conversion funnels.</p>
+                    </div>
+                </div>
             </div> <!-- End Scroll Container -->
         </main>
-    </div>
-
-    <!-- AI Report Modal -->
-    <div class="modal-overlay" id="ai-report-modal">
-        <div class="modal card glass">
-            <div class="modal-header">
-                <h3>AI Generated Executive Summary</h3>
-                <button class="icon-btn close-modal"><i data-lucide="x"></i></button>
+        
+        <!-- ORDER DETAILS DRAWER -->
+        <div class="drawer-overlay" id="order-drawer-overlay"></div>
+        <div class="drawer right-drawer" id="order-drawer">
+            <div class="drawer-header">
+                <h3 id="drawer-order-id">Order Details</h3>
+                <button class="icon-btn close-drawer" id="close-drawer-btn">
+                    <i data-lucide="x"></i>
+                </button>
             </div>
-            <div class="modal-body">
-                <div class="skeleton-text" id="ai-report-skeleton">
-                    <div class="skel-line w-full"></div>
-                    <div class="skel-line w-3-4"></div>
-                    <div class="skel-line w-5-6"></div>
-                    <br>
-                    <div class="skel-line w-full"></div>
-                    <div class="skel-line w-1-2"></div>
-                </div>
-                <div class="report-content hidden" id="ai-report-content">
-                    <p><strong>Executive Overview</strong></p>
-                    <p>PulseSales is currently tracking a 12.8% month-over-month increase in net revenue, primarily driven by strong enterprise uptake in the Asia-Pacific sector. Conversion rates have stabilized at a healthy 8.72%.</p>
-                    <p><strong>Action Items</strong></p>
-                    <ul>
-                        <li>Investigate anomaly clusters originating from EU processing nodes.</li>
-                        <li>Reallocate 15% of marketing spend to capitalize on high conversion in North America.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn outline close-modal">Dismiss</button>
-                <button class="btn primary"><i data-lucide="download"></i> Export PDF</button>
+            <div class="drawer-body" id="drawer-content">
+                <!-- Populated by JS -->
             </div>
         </div>
+
     </div>
 
     <!-- Toast Container -->
-    <div id="toast-container"></div>
+    <div id="toast-container" class="toast-container"></div>
 
     <!-- Scripts -->
+    <script src="js/data.js"></script>
     <script src="js/theme.js"></script>
-    <script src="js/interactions.js"></script>
     <script src="js/charts.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/insights.js"></script>
     <script src="js/dashboard.js"></script>
-    <script src="js/realtime.js"></script>
+    <script src="js/interactions.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
