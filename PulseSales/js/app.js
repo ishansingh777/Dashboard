@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (typeof renderInsights === 'function') renderInsights();
             if (typeof renderActivityStream === 'function') renderActivityStream();
             
+            // Render full tables
+            if (typeof renderAnalyticsTable === 'function') renderAnalyticsTable();
+            if (typeof renderFullOrdersTable === 'function') renderFullOrdersTable();
+            if (typeof renderCustomersTable === 'function') renderCustomersTable();
+            if (typeof renderProductsTable === 'function') renderProductsTable();
+            
             // Re-render icons if dynamically injected
             if (typeof lucide !== 'undefined') lucide.createIcons();
         } else {

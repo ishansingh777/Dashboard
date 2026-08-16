@@ -83,3 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
     if (overlay) overlay.addEventListener('click', closeDrawer);
 });
+
+function renderFullOrdersTable() {
+    const tbody = document.getElementById('orders-page-tbody');
+    const { orders } = window.store;
+    if (!tbody || !orders) return;
+
+    tbody.innerHTML = orders.map(o => `
+        <tr onclick="openOrderDrawer('${o.id}')">
+            <td><strong>${o.id}</strong></td>
+            <td>${o.customer}</td>
+            <td>${o.product}</td>
+            <td>${o.region}</td>
+            <td class="text-right"><strong>${formatCurrency(o.amount)}</strong></td>
+            <td><span class="status-pill ${o.status.toLowerCase()}">${o.status}</span></td>
+            <td class="text-tertiary">${o.time}</td>
+        </tr>
+    `).join('');
+}

@@ -82,3 +82,51 @@ function renderTopProducts(products) {
         </div>
     `).join('');
 }
+
+function renderAnalyticsTable() {
+    const tbody = document.getElementById('analytics-page-tbody');
+    const { sales } = window.store;
+    if (!tbody || !sales || !sales.monthly_revenue) return;
+    
+    tbody.innerHTML = sales.monthly_revenue.map(d => `
+        <tr>
+            <td><strong>${d.month}</strong></td>
+            <td class="text-right">${formatCurrency(d.revenue)}</td>
+            <td>${formatNumber(d.orders)}</td>
+            <td>${formatNumber(d.customers)}</td>
+        </tr>
+    `).join('');
+}
+
+function renderCustomersTable() {
+    const tbody = document.getElementById('customers-page-tbody');
+    const { customers } = window.store;
+    if (!tbody || !customers) return;
+    
+    tbody.innerHTML = customers.map(c => `
+        <tr>
+            <td><strong>${c.id}</strong></td>
+            <td><strong>${c.name}</strong></td>
+            <td>${c.tier}</td>
+            <td class="text-right">${formatCurrency(c.ltv)}</td>
+            <td><span class="status-pill ${c.status === 'Active' ? 'completed' : 'cancelled'}">${c.status}</span></td>
+        </tr>
+    `).join('');
+}
+
+function renderProductsTable() {
+    const tbody = document.getElementById('products-page-tbody');
+    const { products } = window.store;
+    if (!tbody || !products) return;
+    
+    tbody.innerHTML = products.map(p => `
+        <tr>
+            <td><strong>${p.id}</strong></td>
+            <td><strong>${p.name}</strong></td>
+            <td>${p.category}</td>
+            <td class="text-right">${formatCurrency(p.price)}</td>
+            <td>${p.stock}</td>
+            <td><span class="status-pill ${p.status === 'Active' ? 'completed' : 'cancelled'}">${p.status}</span></td>
+        </tr>
+    `).join('');
+}

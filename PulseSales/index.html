@@ -305,31 +305,105 @@
                 
                 <!-- PLACEHOLDER TABS -->
                 <div id="tab-analytics" class="tab-pane">
-                    <div class="empty-state">
-                        <i data-lucide="bar-chart-2"></i>
-                        <h3>Detailed Analytics</h3>
-                        <p>Explore deep cuts of your data.</p>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Analytics Hub</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th class="text-right">Revenue</th>
+                                        <th>Orders</th>
+                                        <th>Customers</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="analytics-page-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-orders" class="tab-pane">
-                    <div class="empty-state">
-                        <i data-lucide="shopping-cart"></i>
-                        <h3>Order Management</h3>
-                        <p>View and manage all historical orders.</p>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Order Management</h3>
+                            <div class="header-actions">
+                                <div class="search-input-wrapper">
+                                    <i data-lucide="search"></i>
+                                    <input type="text" placeholder="Search historical orders...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Customer</th>
+                                        <th>Product</th>
+                                        <th>Region</th>
+                                        <th class="text-right">Amount</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="orders-page-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-customers" class="tab-pane">
-                    <div class="empty-state">
-                        <i data-lucide="users"></i>
-                        <h3>Customer Directory</h3>
-                        <p>Segment and analyze customer behavior.</p>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Customer Directory</h3>
+                            <div class="header-actions">
+                                <div class="search-input-wrapper">
+                                    <i data-lucide="search"></i>
+                                    <input type="text" placeholder="Search customers...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Customer ID</th>
+                                        <th>Name</th>
+                                        <th>Tier</th>
+                                        <th class="text-right">Lifetime Value</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="customers-page-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-products" class="tab-pane">
-                    <div class="empty-state">
-                        <i data-lucide="package"></i>
-                        <h3>Product Inventory</h3>
-                        <p>Track product performance and stock.</p>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Product Inventory</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Name</th>
+                                        <th>Category</th>
+                                        <th class="text-right">Price</th>
+                                        <th>Stock</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="products-page-tbody">
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-insights" class="tab-pane">
