@@ -78,7 +78,7 @@ function calculateMetrics() {
     };
 }
 
-const formatCurrency = (val) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0 }).format(val * 83);
-const formatCurrencyCompact = (val) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', notation: 'compact', maximumFractionDigits: 1 }).format(val * 83);
+const formatCurrency = (val) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0 }).format(val);
+const formatCurrencyCompact = (val) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', notation: 'compact', maximumFractionDigits: 1 }).format(val);
 const formatNumber = (val) => new Intl.NumberFormat('en-IN').format(val);
 const formatPercent = (val) => `${val > 0 ? '+' : ''}${val}%`;
