@@ -1,0 +1,68 @@
+{
+  "info": {
+    "name": "Sales Dashboard API",
+    "description": "API for Sales Dashboard Data",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Dashboard Data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/dashboard?date=2026-05-25",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "dashboard"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2026-05-25"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Success 2026-05-25",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/dashboard?date=2026-05-25",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "dashboard"
+              ],
+              "query": [
+                {
+                  "key": "date",
+                  "value": "2026-05-25"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\"sales\":{\"metrics\":{\"total_revenue\":2057298.23,\"revenue_growth\":12.8,\"gross_volume\":2067929.22,\"discounts\":11073.95,\"aov\":756.9830413281759,\"today_sales\":23839.12,\"today_growth\":8.4,\"total_orders\":2717,\"orders_growth\":6.2,\"pending_orders\":127,\"pending_growth\":-4.1,\"customers\":2483,\"customers_growth\":14.6,\"conversion_rate\":8.72,\"conversion_growth\":2.4},\"regional\":{\"north_america\":214000,\"europe\":181000,\"asia_pacific\":198000,\"other\":102000},\"weekly_revenue\":[{\"day\":\"Mon\",\"value\":82000},{\"day\":\"Tue\",\"value\":94000},{\"day\":\"Wed\",\"value\":112000},{\"day\":\"Thu\",\"value\":108000},{\"day\":\"Fri\",\"value\":125000},{\"day\":\"Sat\",\"value\":98000},{\"day\":\"Sun\",\"value\":85000}],\"monthly_revenue\":[{\"month\":\"Jan\",\"revenue\":450000,\"orders\":600,\"customers\":1200},{\"month\":\"Feb\",\"revenue\":480000,\"orders\":650,\"customers\":1300},{\"month\":\"Mar\",\"revenue\":520000,\"orders\":710,\"customers\":1450},{\"month\":\"Apr\",\"revenue\":510000,\"orders\":700,\"customers\":1420},{\"month\":\"May\",\"revenue\":590000,\"orders\":820,\"customers\":1700},{\"month\":\"Jun\",\"revenue\":610000,\"orders\":850,\"customers\":1800},{\"month\":\"Jul\",\"revenue\":695534,\"orders\":1000,\"customers\":2481}]},\"orders\":[{\"id\":\"3831\",\"customer\":\"User 3586\",\"product\":\"Product 1391\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 23:42:22\"},{\"id\":\"3830\",\"customer\":\"User 3585\",\"product\":\"Product 1023\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 23:26:39\"},{\"id\":\"3829\",\"customer\":\"User 3584\",\"product\":\"Product 1008\",\"region\":\"North America\",\"amount\":507.63,\"status\":\"Completed\",\"time\":\"05/31/2026 22:56:25\"},{\"id\":\"3828\",\"customer\":\"User 3583\",\"product\":\"Product 1008\",\"region\":\"North America\",\"amount\":507.63,\"status\":\"Completed\",\"time\":\"05/31/2026 22:48:36\"},{\"id\":\"3827\",\"customer\":\"User 3583\",\"product\":\"Product 1008\",\"region\":\"North America\",\"amount\":507.63,\"status\":\"Completed\",\"time\":\"05/31/2026 22:45:47\"},{\"id\":\"3826\",\"customer\":\"User 3582\",\"product\":\"Product 1391\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 22:14:43\"},{\"id\":\"3825\",\"customer\":\"User 3581\",\"product\":\"Product 1391\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 22:12:30\"},{\"id\":\"3824\",\"customer\":\"User 3580\",\"product\":\"Product 1308\",\"region\":\"North America\",\"amount\":1100.85,\"status\":\"Completed\",\"time\":\"05/31/2026 21:52:02\"},{\"id\":\"3823\",\"customer\":\"User 3544\",\"product\":\"Product 1392\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 20:57:53\"},{\"id\":\"3822\",\"customer\":\"User 3579\",\"product\":\"Product 1392\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 20:54:36\"},{\"id\":\"3821\",\"customer\":\"User 3422\",\"product\":\"Product 1392\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 20:51:30\"},{\"id\":\"3820\",\"customer\":\"User 3578\",\"product\":\"Product 1392\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 20:49:22\"},{\"id\":\"3819\",\"customer\":\"User 3577\",\"product\":\"Product 1392\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 20:47:18\"},{\"id\":\"3818\",\"customer\":\"User 3576\",\"product\":\"Product 1073\",\"region\":\"North America\",\"amount\":1524.58,\"status\":\"Completed\",\"time\":\"05/31/2026 19:11:47\"},{\"id\":\"3817\",\"customer\":\"User 3575\",\"product\":\"Product 1392\",\"region\":\"North America\",\"amount\":761.86,\"status\":\"Completed\",\"time\":\"05/31/2026 19:00:01\"}],\"customers\":[{\"id\":\"1001\",\"name\":\"Shivani\",\"tier\":\"Premium\",\"ltv\":2522.37,\"status\":\"Active\"},{\"id\":\"1002\",\"name\":\"Sanika\",\"tier\":\"Premium\",\"ltv\":2524.74,\"status\":\"Active\"},{\"id\":\"1003\",\"name\":\"Nidhi\",\"tier\":\"Premium\",\"ltv\":2527.11,\"status\":\"Active\"},{\"id\":\"1004\",\"name\":\"Nadeem\",\"tier\":\"Premium\",\"ltv\":2529.48,\"status\":\"Active\"},{\"id\":\"1005\",\"name\":\"Prabhat\",\"tier\":\"Premium\",\"ltv\":2531.85,\"status\":\"Active\"},{\"id\":\"1006\",\"name\":\"Faizan\",\"tier\":\"Premium\",\"ltv\":2534.22,\"status\":\"Active\"},{\"id\":\"1007\",\"name\":\"Offline\",\"tier\":\"Premium\",\"ltv\":2536.59,\"status\":\"Active\"},{\"id\":\"1008\",\"name\":\"Mudit\",\"tier\":\"Premium\",\"ltv\":2538.96,\"status\":\"Active\"},{\"id\":\"1009\",\"name\":\"Karishma\",\"tier\":\"Premium\",\"ltv\":2541.33,\"status\":\"Active\"},{\"id\":\"1010\",\"name\":\"Diogo\",\"tier\":\"Standard\",\"ltv\":2543.7,\"status\":\"Active\"},{\"id\":\"1011\",\"name\":\"Rahul\",\"tier\":\"Standard\",\"ltv\":2546.07,\"status\":\"Active\"},{\"id\":\"1012\",\"name\":\"Srushti\",\"tier\":\"Standard\",\"ltv\":2548.44,\"status\":\"Active\"},{\"id\":\"1013\",\"name\":\"Jiten\",\"tier\":\"Standard\",\"ltv\":2550.81,\"status\":\"Active\"},{\"id\":\"1014\",\"name\":\"Hannan\",\"tier\":\"Standard\",\"ltv\":2553.18,\"status\":\"Active\"},{\"id\":\"1015\",\"name\":\"Rupali\",\"tier\":\"Standard\",\"ltv\":2555.55,\"status\":\"Active\"}],\"products\":[{\"id\":\"1001\",\"name\":\"eSIM - Singapore, Malaysia - 1 GB/Day For 5 Days\",\"category\":\"eSIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1002\",\"name\":\"Plastic SIM - HongKong, Macau - 1 GB/Day For 7 Days\",\"category\":\"Plastic SIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1003\",\"name\":\"eSIM - HongKong, Macau - 1 GB/Day For 7 Days\",\"category\":\"eSIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1004\",\"name\":\"eSIM - Japan - 1 GB/Day For 7 Days\",\"category\":\"eSIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1005\",\"name\":\"Plastic SIM - Singapore, Malaysia - 0.5 GB/Day For 7 Days\",\"category\":\"Plastic SIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1006\",\"name\":\"eSIM - Singapore, Malaysia - 1 GB/Day For 7 Days\",\"category\":\"eSIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1007\",\"name\":\"Plastic SIM - Turkey - 1 GB/Day For 7 Days\",\"category\":\"Plastic SIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1008\",\"name\":\"eSIM - Vietnam - 5 GB/Day For 20 Days\",\"category\":\"eSIM\",\"price\":507.63,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1009\",\"name\":\"HongKong, Macau 2GB/Day -5 Days\",\"category\":\"eSIM\",\"price\":592.37,\"stock\":\"Unlimited\",\"status\":\"Active\"},{\"id\":\"1010\",\"name\":\"eSIM - Japan - 2 GB/Day For 5 Days\",\"category\":\"eSIM\",\"price\":677.12,\"stock\":\"Unlimited\",\"status\":\"Active\"}],\"destinations\":[{\"id\":\"ABW\",\"type\":\"Country\",\"name\":\"Aruba\",\"flag\":\"https://flagcdn.com/w320/aw.png\",\"included\":\"\",\"active\":\"Inactive\"},{\"id\":\"AFG\",\"type\":\"Country\",\"name\":\"Afghanistan\",\"flag\":\"https://flagcdn.com/w320/af.png\",\"included\":\"\",\"active\":\"Inactive\"},{\"id\":\"AFR\",\"type\":\"Region\",\"name\":\"Africa\",\"flag\":\"https://api.voyx.in/VOYX/regionalFlags/AFR.png\",\"included\":\"COD,LSO,MOZ,REU,ZAF,TZA,TUN\",\"active\":\"Active\"},{\"id\":\"AGO\",\"type\":\"Country\",\"name\":\"Angola\",\"flag\":\"https://flagcdn.com/w320/ao.png\",\"included\":\"\",\"active\":\"Inactive\"},{\"id\":\"AIA\",\"type\":\"Country\",\"name\":\"Anguilla\",\"flag\":\"https://flagcdn.com/w320/ai.png\",\"included\":\"\",\"active\":\"Inactive\"},{\"id\":\"ALA\",\"type\":\"Country\",\"name\":\"Aland Islands\",\"flag\":\"https://flagcdn.com/w320/ax.png\",\"included\":\"\",\"active\":\"Active\"},{\"id\":\"ALB\",\"type\":\"Country\",\"name\":\"Albania\",\"flag\":\"https://flagcdn.com/w320/al.png\",\"included\":\"\",\"active\":\"Active\"},{\"id\":\"AMR\",\"type\":\"Region\",\"name\":\"America\",\"flag\":\"https://api.voyx.in/VOYX/regionalFlags/AMR.png\",\"included\":\"CAN,MEX,USA\",\"active\":\"Inactive\"},{\"id\":\"AND\",\"type\":\"Country\",\"name\":\"Andorra\",\"flag\":\"https://flagcdn.com/w320/ad.png\",\"included\":\"\",\"active\":\"Active\"},{\"id\":\"ANT\",\"type\":\"Country\",\"name\":\"Netherlands Antilles\",\"flag\":\"https://cdn.britannica.com/63/69563-050-79B6CA5A/Flag-Netherlands-Antilles.jpg\",\"included\":\"\",\"active\":\"Inactive\"}],\"selectedDate\":\"2026-05-25\"}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@echo off
+echo Starting API server...
+start cmd /k "cd api && node server.js"
+echo Starting Frontend server...
+start cmd /k "http-server PulseSales -p 8080"
+echo Done! Open http://localhost:8080 in your browser.

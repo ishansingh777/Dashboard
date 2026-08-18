@@ -11,21 +11,16 @@ window.store = {
     metrics: {}
 };
 
-async function loadData() {
+async function loadData(date = '2026-05-25') {
     try {
-        const [salesRes, ordersRes, customersRes, productsRes, destinationsRes] = await Promise.all([
-            fetch('data/sales.json'),
-            fetch('data/orders.json'),
-            fetch('data/customers.json'),
-            fetch('data/products.json'),
-            fetch('data/destinations.json')
-        ]);
+        const response = await fetch(`http://localhost:3000/api/dashboard?date=${date}`);
+        const data = await response.json();
 
-        window.store.sales = await salesRes.json();
-        window.store.orders = await ordersRes.json();
-        window.store.customers = await customersRes.json();
-        window.store.products = await productsRes.json();
-        window.store.destinations = await destinationsRes.json();
+        window.store.sales = data.sales;
+        window.store.orders = data.orders;
+        window.store.customers = data.customers;
+        window.store.products = data.products;
+        window.store.destinations = data.destinations;
 
         calculateMetrics();
         return true;
