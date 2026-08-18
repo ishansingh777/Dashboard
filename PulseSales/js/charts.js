@@ -101,7 +101,7 @@ function initCharts() {
                         ticks: {
                             color: colors.text,
                             font: { family: 'Inter', size: 11 },
-                            callback: function(val) { return '$' + (val / 1000) + 'k'; }
+                            callback: function(val) { return formatCurrencyCompact(val); }
                         }
                     }
                 },
@@ -237,11 +237,19 @@ function initIntelCharts() {
                 responsive: true, maintainAspectRatio: false,
                 plugins: {
                     legend: { position: 'top', labels: { color: colors.text, font: { family: 'Inter' } } },
-                    tooltip: { mode: 'index', intersect: false }
+                    tooltip: { 
+                        mode: 'index', 
+                        intersect: false,
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + formatCurrencyCompact(context.parsed.y * 1000);
+                            }
+                        }
+                    }
                 },
                 scales: {
                     x: { grid: { display: false }, ticks: { color: colors.text } },
-                    y: { grid: { color: colors.grid, borderDash: [4, 4] }, ticks: { color: colors.text, callback: val => '$' + val + 'k' } }
+                    y: { grid: { color: colors.grid, borderDash: [4, 4] }, ticks: { color: colors.text, callback: val => formatCurrencyCompact(val * 1000) } }
                 }
             }
         });
